@@ -529,3 +529,37 @@ main:has(.page-apie-klinika) > .breadcrumbs { max-width: none; }
     .home-directory { grid-template-columns: 1fr; }
     .contact-booking > h2 { font-size: 23px; }
 }
+
+/* Contact information follows a clear shared grid. */
+.contact-essential { display: grid; grid-template-columns: 1fr 1fr; border: 4px double var(--line); background: var(--cream); padding: 28px 32px; gap: 32px; }
+.contact-essential h2 { font-size: 22px; margin-bottom: 16px; }
+.contact-number { display: inline-block; color: var(--wine); font-size: 29px; text-decoration: none; line-height: 1.4; padding-block: 3px; }
+.contact-telephone > p { font-size: 14px; color: var(--muted); margin: 8px 0 18px; }
+.contact-address { border-left: 1px solid var(--line); padding-left: 32px; }
+.contact-address address { font: 20px/1.65 Georgia, serif; color: var(--ink); margin: 0 0 16px; }
+.contact-address .map-link { display: inline-block; padding-block: 10px; }
+.contact-guidance { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 32px 0; }
+.contact-guidance h2 { font-size: 23px; margin-bottom: 16px; }
+.contact-guidance p + p { margin-top: 14px; }
+.contact-entrance { border-top: 3px double var(--line); padding-top: 26px; }
+.contact-entrance > header { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; margin-bottom: 26px; }
+.contact-entrance h2 { font-size: 26px; }
+.contact-entrance .clinic-photo { margin: 5px; }
+.contact-entrance .photo-frame img { height: auto; aspect-ratio: auto; }
+.contact-entrance figcaption { font-size: 15px; margin-top: 14px; }
+@media (max-width: 750px) {
+    .contact-essential { padding: 24px; gap: 24px; }
+    .contact-address { padding-left: 24px; }
+    .contact-number { font-size: 25px; }
+    .contact-guidance { grid-template-columns: 1fr; gap: 26px; }
+    .contact-guidance > section + section { padding-top: 24px; border-top: 1px solid var(--line); }
+    .contact-entrance > header { grid-template-columns: 1fr; gap: 14px; }
+}
+@media (max-width: 640px) {
+    .contact-essential { grid-template-columns: 1fr; padding: 22px 18px; }
+    .contact-address { border-left: 0; border-top: 1px solid var(--line); padding: 22px 0 0; }
+    .contact-essential h2 { margin-bottom: 10px; }
+    .contact-number { font-size: 25px; }
+    .contact-address address { font-size: 19px; margin-bottom: 6px; }
+    .contact-guidance { padding-block: 27px; }
+}
