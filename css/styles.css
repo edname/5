@@ -489,8 +489,8 @@ main:has(.page-registracija) > .breadcrumbs { max-width: 750px; margin-inline: a
 }
 
 /* About the clinic: a short introduction and distinct editorial chapters. */
-.page-apie-klinika { max-width: 750px; }
-main:has(.page-apie-klinika) > .breadcrumbs { max-width: 750px; }
+.page-apie-klinika, .page-paslaugos, .page-kontaktai { max-width: 750px; margin-inline: auto; }
+main:has(.page-apie-klinika, .page-paslaugos, .page-kontaktai) > .breadcrumbs { max-width: 750px; margin-inline: auto; }
 .page-apie-klinika .page-title { border-bottom: 0; margin-bottom: 24px; padding-bottom: 0; }
 .page-apie-klinika .service-lead { max-width: 620px; font-size: 22px; }
 .clinic-introduction { display: flex; align-items: center; gap: 24px; padding: 25px 30px; background: var(--cream); border-block: 3px double var(--line); margin-bottom: 8px; }
