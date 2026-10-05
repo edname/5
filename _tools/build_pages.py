@@ -162,11 +162,11 @@ def page_body(page, faq, sources, links):
     intro, parts = sections(page['content'])
     heading = f'<header class="page-title"><h1>{escape(page["heading"])}</h1><p class="service-lead">{escape(page["lead"])}</p></header>'
     if slug == 'apie-klinika':
-        content = f'<div class="about-opening"><div class="heritage-seal"><span>Nuo</span><strong>1997</strong><span>Privati gydytojos praktika</span></div><div class="opening-copy">{intro}{parts[0]}</div></div><div class="about-columns">{"".join(parts[1:])}</div>'
+        content = f'<div class="clinic-story"><div class="story-intro">{intro}</div>{"".join(parts)}</div>'
     elif slug == 'paslaugos':
         content = '<div class="service-catalog">' + page['content'] + '</div><p class="catalog-note">Dėl paslaugų kainų ir vizito laiko kviečiame <a href="/registracija/">susisiekti telefonu »</a></p>'
     elif slug == 'registracija':
-        content = f'<div class="booking-opening">{intro}<div class="call-note">{parts[0]}</div></div><div class="booking-details">{"".join(parts[1:])}</div>'
+        content = f'<div class="booking-guide">{intro}<div class="booking-information">{"".join(parts)}</div></div>'
     elif slug == 'kontaktai':
         # Address and arrival photo form one practical location page.
         content = page['content']
@@ -251,7 +251,7 @@ def build():
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="stylesheet" href="/css/styles.css?v=layouts-2" />
+        <link rel="stylesheet" href="/css/styles.css?v=layouts-3" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
 {analytics}
     </head>
