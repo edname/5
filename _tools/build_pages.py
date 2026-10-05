@@ -163,10 +163,10 @@ def page_body(page, faq, sources, links):
     heading = f'<header class="page-title"><h1>{escape(page["heading"])}</h1><p class="service-lead">{escape(page["lead"])}</p></header>'
     if slug == 'apie-klinika':
         rows = []
-        for part, label in zip(parts, ['Mūsų požiūris', 'Klinikos paslaugos', 'Jūsų vizitas'], strict=True):
+        for part in parts:
             match = re.fullmatch(r'<section class="text-section"><h2>(.*?)</h2>(.*?)</section>', part.strip(), re.S)
             title, body = match.groups()
-            rows.append(f'<section class="clinic-chapter"><header><p class="section-kicker">{label}</p><h2>{title}</h2></header><div class="chapter-copy">{body}</div></section>')
+            rows.append(f'<section class="clinic-chapter"><h2>{title}</h2><div class="chapter-copy">{body}</div></section>')
         content = f'<div class="clinic-introduction"><span class="clinic-intro-ornament" aria-hidden="true">❧</span><div>{intro}</div></div><div class="clinic-chapters">{"".join(rows)}</div>'
     elif slug == 'paslaugos':
         content = '<div class="service-catalog">' + page['content'] + '</div><p class="catalog-note">Dėl paslaugų kainų ir vizito laiko kviečiame <a href="/kontaktai/">susisiekti telefonu »</a></p>'
@@ -250,7 +250,7 @@ def build():
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="stylesheet" href="/css/styles.css?v=home-19" />
+        <link rel="stylesheet" href="/css/styles.css?v=about-20" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
 {analytics}
     </head>
