@@ -160,7 +160,11 @@ def sections(content):
 def page_body(page, faq, sources, links):
     slug = page['slug']
     intro, parts = sections(page['content'])
-    heading = f'<header class="page-title"><h1>{escape(page["heading"])}</h1><p class="service-lead">{escape(page["lead"])}</p></header>'
+    title_html = f'<h1>{escape(page["heading"])}</h1>'
+    if slug != 'apie-klinika':
+        motif = 'tree' if slug in ('nestumo-prieziura-vilniuje', 'profilaktinis-ginekologinis-patikrinimas') else 'sun'
+        title_html = f'<div class="page-title-heading">{title_html}<img class="page-ornament" src="/assets/baltic-{motif}.svg" width="40" height="50" alt="" aria-hidden="true" /></div>'
+    heading = f'<header class="page-title">{title_html}<p class="service-lead">{escape(page["lead"])}</p></header>'
     if slug == 'apie-klinika':
         rows = []
         for part in parts:
@@ -250,7 +254,7 @@ def build():
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="stylesheet" href="/css/styles.css?v=ornaments-22" />
+        <link rel="stylesheet" href="/css/styles.css?v=ornaments-23" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
 {analytics}
     </head>
