@@ -1,0 +1,40 @@
+[
+  {
+    "slug": "apie-klinika",
+    "label": "Apie kliniką",
+    "title": "Apie kliniką | G. Karpenko privati praktika Vilniuje",
+    "description": "G. Karpenko akušerijos ir ginekologijos klinika Vilniuje. Privati praktika nuo 1997 metų, ilgametė patirtis ir asmeninis dėmesys pacientei.",
+    "heading": "Apie kliniką",
+    "lead": "Ilgametė patirtis ir atidus, žmogiškas požiūris į moters sveikatą.",
+    "content": "<p>G. Karpenko privati akušerijos ir ginekologijos klinika įsikūrusi Gedvydžių g. 25, Vilniuje. Gydytoja privačia praktika užsiima nuo 1997 metų.</p>\n<h2>Laikas pokalbiui ir apžiūrai</h2>\n<p>Konsultacijai skiriama laiko, kad galėtumėte ramiai aptarti savo savijautą, sveikatos istoriją ir rūpimus klausimus. Kiekvienos pacientės situacija vertinama individualiai.</p>\n<p>Galite kreiptis dėl konkrečių nusiskundimų, pasikalbėti apie ankstesnių tyrimų rezultatus ar atvykti profilaktiškai pasitikrinti. Apžiūros ir tyrimų poreikis aptariamas per konsultaciją.</p>\n<h2>Akušerija ir ginekologija</h2>\n<p>Klinikoje konsultuojama moters sveikatos klausimais, atliekama ginekologinių ligų diagnostika ir gydymas, echoskopiniai tyrimai. Taip pat teikiamos nėštumo nustatymo ir priežiūros, kontracepcijos parinkimo bei profilaktinės patikros paslaugos.</p>\n<p><a href=\"/paslaugos/\">Peržiūrėti klinikos paslaugas »</a></p>\n<h2>Prieš atvykstant</h2>\n<p>Vizito laikas derinamas telefonu. Dėl konsultacijos kainos, pasiruošimo ir priėmimo laiko galite pasiteirauti registruodamasi.</p>\n<p><a href=\"/registracija/\">Registracijos informacija »</a></p>",
+    "sidebar": "<figure class=\"clinic-photo\">\n                        <div class=\"photo-frame\">\n                            <img src=\"/assets/klinika.jpg\" alt=\"Įėjimas į G. Karpenko kliniką Gedvydžių gatvėje 25, Vilniuje\" width=\"1200\" height=\"584\" />\n                        </div>\n                        <figcaption>G. Karpenko klinika <span>Gedvydžių g. 25, Vilnius</span></figcaption>\n                    </figure>"
+  },
+  {
+    "slug": "paslaugos",
+    "label": "Paslaugos",
+    "title": "Akušerijos ir ginekologijos paslaugos | G. Karpenko",
+    "description": "G. Karpenko klinikos paslaugos: ginekologo konsultacija, echoskopija, nėštumo priežiūra, kontracepcijos parinkimas ir profilaktinė patikra Vilniuje.",
+    "heading": "Klinikos paslaugos",
+    "lead": "Konsultacijos, apžiūros ir tyrimai įvairiais moters gyvenimo etapais.",
+    "content": "<p>Pasirinkite paslaugą, apie kurią norėtumėte sužinoti daugiau. Kiekviename puslapyje rasite jos aprašymą, informaciją apie vizitą ir atsakymus į dažniausius klausimus.</p><section class=\"services\" aria-label=\"Paslaugų sąrašas\">\n                        \n                        <article class=\"service\">\n                            <h2><a href=\"/ginekologo-konsultacija-vilniuje/\">Ginekologo konsultacija ir ligų gydymas</a></h2>\n                            <p>Individuali konsultacija, apžiūra, ginekologinių ligų diagnostika ir gydymas. Laikas Jūsų sveikatos klausimams.</p>\n                        </article>\n                        <article class=\"service\">\n                            <h2><a href=\"/ginekologine-echoskopija-vilniuje/\">Ginekologinė echoskopija</a></h2>\n                            <p>Ultragarsinis tyrimas kaip ginekologinio ištyrimo dalis. Sužinokite apie tyrimą ir pasiruošimą vizitui.</p>\n                        </article>\n                        <article class=\"service\">\n                            <h2><a href=\"/nestumo-prieziura-vilniuje/\">Nėštumo nustatymas ir nėščiųjų priežiūra</a></h2>\n                            <p>Ankstyvas nėštumo nustatymas, nėščiųjų priežiūra, vaisiaus stebėjimas ir tyrimai nėštumo metu.</p>\n                        </article>\n                        <article class=\"service\">\n                            <h2><a href=\"/kontracepcijos-parinkimas/\">Individualus kontracepcijos parinkimas</a></h2>\n                            <p>Hormoninių ir nehormoninių kontracepcijos būdų parinkimas, atsižvelgiant į sveikatos istoriją ir individualius poreikius.</p>\n                        </article>\n                        <article class=\"service\">\n                            <h2><a href=\"/profilaktinis-ginekologinis-patikrinimas/\">Profilaktinis ginekologinis patikrinimas</a></h2>\n                            <p>Profilaktinė apžiūra, krūties ir gimdos kaklelio vėžio prevencijos klausimai bei individuali sveikatos priežiūra.</p>\n                        </article>\n                    </section>"
+  },
+  {
+    "slug": "registracija",
+    "label": "Registracija",
+    "title": "Registracija telefonu | G. Karpenko klinika",
+    "description": "Registracija į G. Karpenko kliniką telefonu +370 5 230 2235. Vizito laikas, kainos ir pasiruošimas aptariami skambučio metu. Gedvydžių g. 25, Vilnius.",
+    "heading": "Registracija vizitui",
+    "lead": "Dėl konsultacijos ir apžiūros maloniai kviečiame susitarti telefonu.",
+    "content": "<div class=\"registration-call\"><span>Registracija telefonu</span><a href=\"tel:+37052302235\">+370 5 230 2235</a><a class=\"button\" href=\"tel:+37052302235\">Skambinti į kliniką</a></div>\n<h2>Jei nepavyko prisiskambinti</h2><p>Gydytoja registraciją derina pati. Konsultacijos metu jos dėmesys skirtas pacientei, todėl ne visada pavyksta atsiliepti telefonu. Jei neprisiskambinote, maloniai prašome paskambinti vėliau. Ačiū už supratingumą.</p>\n<h2>Ką aptarti registruojantis?</h2>\n<p>Trumpai pasakykite, dėl kokios konsultacijos ar tyrimo norėtumėte atvykti. Telefonu galėsite suderinti vizito laiką, sužinoti paslaugos kainą ir pasiteirauti, kaip pasiruošti.</p>\n<p>Jei turite ankstesnių tyrimų atsakymus arba numatomas pakartotinis vizitas, paminėkite tai pokalbio metu.</p>\n<h2>Kur atvykti?</h2>\n<p>Klinikos adresas – Gedvydžių g. 25, Vilnius. Atvykimo informaciją ir nuorodą į žemėlapį rasite <a href=\"/kontaktai/\">kontaktų puslapyje</a>.</p>",
+    "sidebar": "<section class=\"appointment\"><p class=\"section-kicker\">Prieš vizitą</p><h2>Patogiai pasiruoškite</h2><div class=\"ornament\" aria-hidden=\"true\">❧</div><p>Užsirašykite norimus aptarti klausimus. Dėl pasiruošimo konkrečiam tyrimui pasiteiraukite registruodamasi.</p><a class=\"text-link\" href=\"/paslaugos/\">Klinikos paslaugos »</a></section>"
+  },
+  {
+    "slug": "kontaktai",
+    "label": "Kontaktai",
+    "title": "Kontaktai: Gedvydžių g. 25, Vilnius | G. Karpenko",
+    "description": "G. Karpenko klinikos adresas: Gedvydžių g. 25, LT-06311 Vilnius. Telefonas +370 5 230 2235. Klinikos įėjimo nuotrauka ir nuoroda į žemėlapį.",
+    "heading": "Kontaktai",
+    "lead": "Maloniai laukiame klinikoje Vilniuje, Gedvydžių gatvėje.",
+    "content": "<h2>Klinikos adresas</h2><address class=\"page-address\">Gedvydžių g. 25<br>LT-06311 Vilnius</address><p><a href=\"https://g.page/privati-ginekologijos-klinika\">Rodyti kliniką žemėlapyje »</a></p>\n<figure class=\"clinic-photo\">\n                        <div class=\"photo-frame\">\n                            <img src=\"/assets/klinika.jpg\" alt=\"Įėjimas į G. Karpenko kliniką Gedvydžių gatvėje 25, Vilniuje\" width=\"1200\" height=\"584\" />\n                        </div>\n                        <figcaption>G. Karpenko klinika <span>Gedvydžių g. 25, Vilnius</span></figcaption>\n                    </figure><h2>Atvykimas į kliniką</h2><p>Nuotraukoje matomas klinikos įėjimas. Prieš atvykdama prašome susitarti dėl vizito laiko telefonu.</p><p><a href=\"/registracija/\">Kaip užsiregistruoti vizitui »</a></p>"
+  }
+]

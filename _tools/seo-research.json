@@ -188,5 +188,23 @@
     "source": "Owner clarification in this chat, 2026-10-05",
     "fact": "Private practice with a single clinician, G. Karpenko, who personally consults and performs examinations.",
     "copy_approach": "Use the masthead to identify G. Karpenko. Keep body copy focused on services and patient questions; avoid repeated clinician names, staffing counts, and same-doctor slogans. Retain the practical telephone availability explanation."
-  }
+  },
+  "navigation_pages": [
+    {
+      "url": "/apie-klinika/",
+      "purpose": "Apie kliniką"
+    },
+    {
+      "url": "/paslaugos/",
+      "purpose": "Paslaugos"
+    },
+    {
+      "url": "/registracija/",
+      "purpose": "Registracija"
+    },
+    {
+      "url": "/kontaktai/",
+      "purpose": "Kontaktai"
+    }
+  ]
 }

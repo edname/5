@@ -154,13 +154,13 @@ def build():
     home = (ROOT / 'index.html').read_text()
     header = home[home.index('            <header'):home.index('            <main')]
     header = header.replace('href="./"', 'href="/"').replace('src="assets/', 'src="/assets/')
-    header = re.sub(r'href="#(apie|paslaugos|registracija|kontaktai)"', r'href="/#\1"', header)
-    contact = home[home.index('                <section class="contact"'):home.index('            </main>')]
-    footer = home[home.index('            <footer>'):home.index('    </body>')]
+    header = header.replace(' aria-current="page"', '')
+    footer = home[home.index('            <footer>'):home.index('        <script>', home.index('            <footer>'))]
     clinic = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', home, re.S)[1])
     clinic.pop('@context', None)
     analytics = re.search(r'            <script async src="https://www.googletagmanager.com/.*?</script>\s*<script>.*?</script>', home, re.S)[0]
-    for page in PAGES:
+    info_pages = json.loads((ROOT / '_tools/info-pages.json').read_text())
+    for page in PAGES + info_pages:
         url = f'{BASE}/{page["slug"]}/'
         breadcrumbs = {
             '@type': 'BreadcrumbList',
@@ -178,16 +178,40 @@ def build():
             'url': url, 'provider': {'@id': BASE + '/#klinika'},
             'areaServed': {'@type': 'City', 'name': 'Vilnius'},
         }]}
+        is_service = page in PAGES
+        active_path = '/paslaugos/' if is_service else f'/{page["slug"]}/'
+        page_header = header.replace(f'href="{active_path}"', f'href="{active_path}" aria-current="page"')
+        if is_service:
+            breadcrumbs['itemListElement'].insert(1, {'@type': 'ListItem', 'position': 2, 'name': 'Paslaugos', 'item': BASE + '/paslaugos/'})
+            breadcrumbs['itemListElement'][-1]['position'] = 3
+        else:
+            schema['@graph'].pop()
+            schema['@graph'][-1].pop('mainEntity')
+        breadcrumb_parent = '<a href="/paslaugos/">Paslaugos</a><span aria-hidden="true">»</span>' if is_service else ''
         links = '\n'.join(
             f'<li><a href="/{p["slug"]}/"' + (' aria-current="page"' if p == page else '') + f'>{escape(p["label"])}</a></li>'
             for p in PAGES
         )
-        faq = '\n'.join(f'<section class="question"><h3>{escape(q)}</h3><p>{escape(a)}</p></section>' for q, a in page['faq'])
+        faq = '\n'.join(f'<section class="question"><h3>{escape(q)}</h3><p>{escape(a)}</p></section>' for q, a in page.get('faq', []))
         sources = ''
-        if page['sources']:
+        if page.get('sources'):
             sources = '<section class="source-note"><h2>Papildoma informacija</h2><ul>' + ''.join(
                 f'<li><a href="{escape(url)}">{escape(label)}</a></li>' for label, url in page['sources']
             ) + '</ul></section>'
+        sidebar = page.get('sidebar', f'''
+                        <section class="appointment" aria-labelledby="appointment-title">
+                            <p class="section-kicker">Privati praktika nuo 1997 metų</p>
+                            <h2 id="appointment-title">Registracija vizitui</h2>
+                            <div class="ornament" aria-hidden="true">❧</div>
+                            <p>Dėl konsultacijos ir apžiūros susitarkite telefonu.</p>
+                            <a class="appointment-phone" href="tel:+37052302235">+370 5 230 2235</a>
+                            <a class="button" href="tel:+37052302235">Skambinti į kliniką</a>
+                            <p class="appointment-note">Gedvydžių g. 25, Vilnius<br>Vizito laikas derinamas telefonu.</p>
+                            <p class="phone-note">Gydytoja registraciją derina pati. Konsultacijos metu jos dėmesys skirtas pacientei, todėl ne visada pavyksta atsiliepti telefonu. Jei neprisiskambinote, maloniai prašome paskambinti vėliau. Ačiū už supratingumą.</p>
+                        </section>
+                        <nav class="service-menu" aria-label="Klinikos paslaugos"><h2>Klinikos paslaugos</h2><ul>{links}</ul></nav>
+''')
+        faq_section = f'<section class="service-faq" aria-labelledby="klausimai"><h2 id="klausimai">Dažniausi klausimai</h2>{faq}</section>' if faq else ''
         output = f'''<!DOCTYPE html>
 <html lang="lt">
     <head>
@@ -203,15 +227,15 @@ def build():
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="stylesheet" href="/css/styles.css?v=services-2" />
+        <link rel="stylesheet" href="/css/styles.css?v=pages-1" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
 {analytics}
     </head>
     <body>
         <a class="skip-link" href="#turinys">Pereiti prie turinio</a>
         <div class="site-sheet">
-{header}            <main id="turinys">
-                <nav class="breadcrumbs" aria-label="Puslapio vieta"><a href="/">Pradžia</a><span aria-hidden="true">»</span><span aria-current="page">{escape(page['label'])}</span></nav>
+{page_header}            <main id="turinys">
+                <nav class="breadcrumbs" aria-label="Puslapio vieta"><a href="/">Pradžia</a><span aria-hidden="true">»</span>{breadcrumb_parent}<span aria-current="page">{escape(page['label'])}</span></nav>
                 <div class="service-page-layout">
                     <article class="service-content">
                         <header class="service-page-heading">
@@ -220,24 +244,12 @@ def build():
                             <p class="service-lead">{escape(page['lead'])}</p>
                         </header>
 {page['content']}
-                        <section class="service-faq" aria-labelledby="klausimai"><h2 id="klausimai">Dažniausi klausimai</h2>{faq}</section>
+                        {faq_section}
                         {sources}
                     </article>
-                    <aside class="visit-sidebar service-page-sidebar" aria-label="Registracija ir paslaugos">
-                        <section class="appointment" aria-labelledby="appointment-title">
-                            <p class="section-kicker">Privati praktika nuo 1997 metų</p>
-                            <h2 id="appointment-title">Registracija vizitui</h2>
-                            <div class="ornament" aria-hidden="true">❧</div>
-                            <p>Dėl konsultacijos ir apžiūros susitarkite telefonu.</p>
-                            <a class="appointment-phone" href="tel:+37052302235">+370 5 230 2235</a>
-                            <a class="button" href="tel:+37052302235">Skambinti į kliniką</a>
-                            <p class="appointment-note">Gedvydžių g. 25, Vilnius<br>Vizito laikas derinamas telefonu.</p>
-                            <p class="phone-note">Gydytoja registraciją derina pati. Konsultacijos metu jos dėmesys skirtas pacientei, todėl ne visada pavyksta atsiliepti telefonu. Jei neprisiskambinote, maloniai prašome paskambinti vėliau. Ačiū už supratingumą.</p>
-                        </section>
-                        <nav class="service-menu" aria-label="Klinikos paslaugos"><h2>Klinikos paslaugos</h2><ul>{links}</ul></nav>
-                    </aside>
+                    <aside class="visit-sidebar service-page-sidebar" aria-label="Informacija apie vizitą">{sidebar}</aside>
                 </div>
-{contact}            </main>
+            </main>
 {footer}    </body>
 </html>
 '''

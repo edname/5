@@ -8,6 +8,8 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE = 'https://karpenko.lt'
+from build_pages import PAGES
+service_routes = {'/' + p['slug'] + '/' for p in PAGES}
 
 class Page(HTMLParser):
     def __init__(self, path):
@@ -57,7 +59,9 @@ for path, page in pages.items():
     if route != '/':
         graph = page.schemas[0]['@graph']
         check(any(n.get('@type') == 'BreadcrumbList' for n in graph), f'{name}: missing breadcrumb schema')
-        check(any(n.get('@type') == 'Service' and n.get('url') == expected for n in graph), f'{name}: wrong service schema')
+        check(any(n.get('@type') == 'WebPage' and n.get('url') == expected for n in graph), f'{name}: wrong page schema')
+        if route in service_routes:
+            check(any(n.get('@type') == 'Service' and n.get('url') == expected for n in graph), f'{name}: wrong service schema')
     for href in page.links + page.assets:
         url = urlsplit(href)
         if url.scheme and not (url.scheme == 'https' and url.netloc == 'karpenko.lt'): continue
@@ -80,9 +84,21 @@ check(set(urls) == {p.canonicals[0] for p in pages.values()}, 'Sitemap does not 
 check(len(urls) == len(set(urls)), 'Duplicate sitemap URLs')
 check('Sitemap: https://karpenko.lt/sitemap.xml' in (ROOT/'robots.txt').read_text(), 'Missing sitemap in robots.txt')
 check('noindex' in Page(ROOT/'404.html').meta.get('robots',''), '404 should be noindex')
-home_links = pages[(ROOT/'index.html').resolve()].links
-for path in files[1:]:
-    check('/'+path.parent.name+'/' in home_links, f'Orphan service page: {path.parent.name}')
+# Every page must be reachable by following ordinary links from the homepage.
+visited, pending = set(), [(ROOT/'index.html').resolve()]
+while pending:
+    path = pending.pop()
+    if path in visited: continue
+    visited.add(path)
+    for href in pages[path].links:
+        u = urlsplit(href)
+        if u.netloc and u.netloc != 'karpenko.lt': continue
+        if u.scheme and u.scheme not in ('http', 'https'): continue
+        target = ROOT / u.path.lstrip('/') if u.path.startswith('/') else path.parent / u.path
+        if target.is_dir(): target /= 'index.html'
+        target = target.resolve()
+        if target in pages and target not in visited: pending.append(target)
+check(visited == set(pages), 'Some pages are unreachable from the home page')
 
 if errors:
     raise SystemExit('\n'.join(errors))
