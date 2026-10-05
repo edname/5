@@ -344,7 +344,8 @@ footer { text-align: center; margin: 0 9px 9px; padding: 14px 34px; border-top: 
 .mobile-toolbar { display: none; }
 @media (max-width: 640px) {
     body { padding: 0; }
-    .site-sheet { border-inline: 0; border-bottom: 0; border-top-width: 3px; }
+    .site-sheet { display: flex; flex-direction: column; min-height: 100svh; border-inline: 0; border-bottom: 0; border-top-width: 3px; }
+    .site-sheet > main { flex: 1; }
     footer { margin: 0; padding: 18px 20px; }
     .masthead { display: block; position: sticky; top: 0; z-index: 10; margin: 0; padding: 0; border: 0; border-bottom: 1px solid var(--line); background: var(--paper); }
     .masthead > .practice-note, .masthead > .brand, .masthead > .header-contact, .navigation { display: none; }
