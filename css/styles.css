@@ -570,8 +570,8 @@ main:has(.page-apie-klinika, .page-paslaugos, .page-kontaktai) > .breadcrumbs { 
 .page-title-heading { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
 .page-title-heading h1 { min-width: 0; }
 .page-ornament { flex: 0 0 40px; object-fit: contain; }
-.mobile-home-ornament { display: none; }
 @media (max-width: 640px) {
-    .page-ornament { width: 30px; height: 38px; flex-basis: 30px; }
-    .mobile-home-ornament { display: block; margin-bottom: 14px; }
+    .page-title-heading { display: block; }
+    .page-ornament, .clinic-intro-ornament { display: none; }
+    footer::before { content: ""; display: block; width: 24px; height: 24px; margin: 0 auto 10px; background: url("../assets/baltic-sun.svg") center / contain no-repeat; }
 }

@@ -1,6 +1,6 @@
 # Decorative Baltic-inspired ornaments
 
-The sun and tree SVGs are original geometric interpretations, not reproductions of historical artefacts or exclusive Baltic symbols. They replace the generic decorative flourish in the homepage practice card and clinic introduction. Related ornaments also appear beside the remaining page titles and on the 404 page. A small sun is shown in the mobile homepage introduction, where the practice card is hidden. The clinic flower logo is retained. No therapeutic, protective or fertility claims are made.
+The sun and tree SVGs are original geometric interpretations, not reproductions of historical artefacts or exclusive Baltic symbols. They replace the generic decorative flourish in the homepage practice card and clinic introduction. Related ornaments also appear beside the remaining page titles and on the 404 page. On mobile, title and introduction ornaments are hidden; one small sun sits above the copyright in the shared footer, keeping headings full-width. The clinic flower logo is retained. No therapeutic, protective or fertility claims are made.
 
 Sources consulted on 2026-10-05:
 
