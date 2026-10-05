@@ -542,6 +542,7 @@ main:has(.page-apie-klinika) > .breadcrumbs { max-width: none; }
 .contact-guidance p + p { margin-top: 14px; }
 .contact-entrance { border-top: 3px double var(--line); padding-top: 26px; }
 .contact-entrance > header { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; margin-bottom: 26px; }
+.contact-entrance header p + p { margin-top: 14px; }
 .contact-entrance h2 { font-size: 26px; }
 .contact-entrance .clinic-photo { margin: 5px; }
 .contact-entrance .photo-frame img { height: auto; aspect-ratio: auto; }

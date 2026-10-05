@@ -250,7 +250,7 @@ def build():
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="stylesheet" href="/css/styles.css?v=contact-16" />
+        <link rel="stylesheet" href="/css/styles.css?v=contact-17" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
 {analytics}
     </head>
