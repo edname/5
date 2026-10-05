@@ -251,11 +251,11 @@ def build():
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="stylesheet" href="/css/styles.css?v=mobile-4" />
+        <link rel="stylesheet" href="/css/styles.css?v=mobile-5" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
 {analytics}
     </head>
-    <body>
+    <body id="pradzia">
         <a class="skip-link" href="#turinys">Pereiti prie turinio</a>
         <div class="site-sheet">
 {page_header}            <main id="turinys">
