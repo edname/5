@@ -562,3 +562,7 @@ main:has(.page-apie-klinika, .page-paslaugos, .page-kontaktai) > .breadcrumbs { 
     .contact-address address { font-size: 19px; margin-bottom: 6px; }
     .contact-guidance { padding-block: 27px; }
 }
+
+/* Original ornaments inspired by Baltic folk-art sun and tree motifs. */
+.ornament img { display: block; margin-inline: auto; }
+.clinic-intro-ornament img { display: block; }
