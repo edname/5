@@ -38,7 +38,7 @@ class Page(HTMLParser):
             self.schemas.append(json.loads(self.json_text))
             self.in_json, self.json_text = False, ''
 
-files = [ROOT/'index.html', *sorted(p for p in ROOT.glob('*/index.html') if not p.parent.name.startswith(('.', '_')))]
+files = [ROOT/'index.html', *sorted(p for p in ROOT.glob('*/index.html') if not p.parent.name.startswith(('.', '_')) and p.parent.name != 'registracija')]
 pages = {p.resolve(): Page(p) for p in files}
 errors = []
 def check(ok, message):
@@ -84,6 +84,10 @@ check(set(urls) == {p.canonicals[0] for p in pages.values()}, 'Sitemap does not 
 check(len(urls) == len(set(urls)), 'Duplicate sitemap URLs')
 check('Sitemap: https://karpenko.lt/sitemap.xml' in (ROOT/'robots.txt').read_text(), 'Missing sitemap in robots.txt')
 check('noindex' in Page(ROOT/'404.html').meta.get('robots',''), '404 should be noindex')
+redirect = Page(ROOT/'registracija/index.html')
+check(redirect.canonicals == [BASE + '/kontaktai/'], 'Registration redirect canonical incorrect')
+check('/kontaktai/' in redirect.links, 'Registration redirect needs fallback link')
+check('noindex' in redirect.meta.get('robots', ''), 'Registration redirect should be noindex')
 # Every page must be reachable by following ordinary links from the homepage.
 visited, pending = set(), [(ROOT/'index.html').resolve()]
 while pending:

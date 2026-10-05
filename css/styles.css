@@ -515,3 +515,17 @@ main:has(.page-apie-klinika) > .breadcrumbs { max-width: none; }
     .clinic-intro-ornament { display: block; font-size: 28px; line-height: 1; margin-bottom: 12px; }
     .clinic-introduction p { font-size: 16px; }
 }
+
+/* Registration and directions share one contact page. */
+.home-directory { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.contact-booking { max-width: 750px; }
+.contact-booking .registration-call { margin: 0 0 25px; }
+.contact-booking > h2 { font-size: 24px; margin: 26px 0 13px; }
+.contact-booking > p + p { margin-top: 14px; }
+.contact-arrival { border-top: 3px double var(--line); padding-top: 28px; margin-top: 34px; }
+.contact-arrival > h2 { margin-bottom: 22px; }
+.contact-arrival .page-address { margin-top: 0; }
+@media (max-width: 640px) {
+    .home-directory { grid-template-columns: 1fr; }
+    .contact-booking > h2 { font-size: 23px; }
+}

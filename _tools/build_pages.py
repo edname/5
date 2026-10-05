@@ -169,16 +169,9 @@ def page_body(page, faq, sources, links):
             rows.append(f'<section class="clinic-chapter"><header><p class="section-kicker">{label}</p><h2>{title}</h2></header><div class="chapter-copy">{body}</div></section>')
         content = f'<div class="clinic-introduction"><span class="clinic-intro-ornament" aria-hidden="true">❧</span><div>{intro}</div></div><div class="clinic-chapters">{"".join(rows)}</div>'
     elif slug == 'paslaugos':
-        content = '<div class="service-catalog">' + page['content'] + '</div><p class="catalog-note">Dėl paslaugų kainų ir vizito laiko kviečiame <a href="/registracija/">susisiekti telefonu »</a></p>'
-    elif slug == 'registracija':
-        content = f'<div class="booking-guide">{intro}<div class="booking-information">{"".join(parts)}</div></div>'
+        content = '<div class="service-catalog">' + page['content'] + '</div><p class="catalog-note">Dėl paslaugų kainų ir vizito laiko kviečiame <a href="/kontaktai/">susisiekti telefonu »</a></p>'
     elif slug == 'kontaktai':
-        # Address and arrival photo form one practical location page.
         content = page['content']
-        photo = re.search(r'<figure.*?</figure>', content, re.S)[0]
-        content = content.replace(photo, '')
-        address, arrival = content.split('<h2>Atvykimas į kliniką</h2>')
-        content = f'<div class="location-layout"><div class="location-details">{address}<h2>Registracija telefonu</h2><p><a class="contact-phone" href="tel:+37052302235">+370 5 230 2235</a></p><p>Vizito laikas derinamas iš anksto.</p></div>{photo}</div><section class="arrival-note"><h2>Atvykimas į kliniką</h2>{arrival}</section>'
     elif slug == 'ginekologo-konsultacija-vilniuje':
         content = f'<div class="article-intro">{intro}</div><div class="consultation-layout"><div class="consultation-flow">{"".join(parts[:2])}</div><div class="visit-memo">{"".join(parts[2:])}</div></div>'
     elif slug == 'ginekologine-echoskopija-vilniuje':
@@ -257,7 +250,7 @@ def build():
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="stylesheet" href="/css/styles.css?v=about-14" />
+        <link rel="stylesheet" href="/css/styles.css?v=contact-15" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
 {analytics}
     </head>

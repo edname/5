@@ -21,3 +21,5 @@ Before publishing, run the checks, review the pages at desktop and mobile widths
 ## Puslapių išdėstymas
 
 `page_body()` generatoriuje parenka išdėstymą pagal puslapio paskirtį. Esamas tekstas skaidomas pagal H2 antraštes; keičiant jų skaičių ar tvarką reikia atnaujinti atitinkamą kompoziciją. Klinikos įėjimo nuotrauka rodoma tik kontaktų puslapyje. Paslaugų puslapiuose bendrą registracijos šoninę skiltį pakeičia konkrečiai temai skirti informaciniai blokai ir apatinė paslaugų navigacija.
+
+Registracija sujungta su `/kontaktai/`. `/registracija/` paliktas kaip statinis nukreipimas su canonical į kontaktus ir `noindex`; sitemap jo neįtraukia. Meniu ir vidinės registracijos nuorodos veda tiesiai į kontaktus.
