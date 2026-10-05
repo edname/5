@@ -58,5 +58,32 @@
       "back_to_top_scrollY": 0
     },
     "limits": "Viewport emulation in in-app browser; not physical device or cross-browser certification"
+  },
+  "final_pass": {
+    "date": "2026-10-05",
+    "scope": "Current nine-page site after registration/contact merge, plus 404 and legacy registration redirects",
+    "result": "No new visual or functional defects found in the checks below; accepted layouts preserved without design changes.",
+    "verification": {
+      "desktop_visual_review": "All nine pages at 1280px; homepage footer also checked after scrolling because full-page capture clipped it.",
+      "mobile_visual_review": "All nine pages at 390px; homepage and menu additionally inspected at 320px.",
+      "route_width_matrix": [
+        320,
+        641,
+        768,
+        1280
+      ],
+      "routes_in_width_matrix": 10,
+      "horizontal_overflow": 0,
+      "broken_images": 0,
+      "mobile_menu": "Escape closes menu and focuses summary; outside click closes menu; Contacts reachable at 640x320.",
+      "faq": "All ten questions across five service pages open by click and close with Enter.",
+      "legacy_registration": "/registracija/ and /#registracija both redirect to /kontaktai/.",
+      "static_checker": "PASS: nine pages; metadata, canonical URLs, schema, local links, assets and sitemap."
+    },
+    "limits": [
+      "Viewport emulation in the in-app browser, not physical-device or cross-browser certification.",
+      "Medical claims and external destination content were not reassessed."
+    ],
+    "historical_notes": "Earlier audit entries describe previous site versions, including the removed back-to-top control and separate registration page."
   }
 }
