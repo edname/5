@@ -183,5 +183,10 @@
       "ginekologas vilniuje santariskes",
       "ginekologas vilniuje skubiai"
     ]
+  },
+  "confirmed_clinic_positioning": {
+    "source": "Owner clarification in this chat, 2026-10-05",
+    "fact": "Private practice with a single clinician, G. Karpenko, who personally consults and performs examinations.",
+    "copy_approach": "Emphasize the named clinician and personal care; use third-person singular rather than implying a team."
   }
 }
