@@ -204,7 +204,7 @@ def build():
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="stylesheet" href="/css/styles.css?v=services-1" />
+        <link rel="stylesheet" href="/css/styles.css?v=services-2" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
 {analytics}
     </head>
@@ -233,6 +233,7 @@ def build():
                             <a class="appointment-phone" href="tel:+37052302235">+370 5 230 2235</a>
                             <a class="button" href="tel:+37052302235">Skambinti į kliniką</a>
                             <p class="appointment-note">Gedvydžių g. 25, Vilnius<br>Vizito laikas derinamas telefonu.</p>
+                            <p class="phone-note">Gydytoja pacientes priima ir registruoja pati. Konsultacijos ar apžiūros metu ji ne visada gali atsiliepti. Jei nepavyko prisiskambinti, prašome paskambinti vėliau. Dėkojame už supratingumą.</p>
                         </section>
                         <nav class="service-menu" aria-label="Klinikos paslaugos"><h2>Klinikos paslaugos</h2><ul>{links}</ul></nav>
                     </aside>
