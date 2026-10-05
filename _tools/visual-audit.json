@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-05",
+  "scope": "Visual and interaction audit of all 10 static clinic routes in the in-app browser",
+  "fixed": [
+    "Mobile menu constrained to short viewport with internal scrolling",
+    "Menu closes on outside click, Escape, navigation and desktop breakpoint; Escape restores trigger focus",
+    "Homepage registration and services links moved next to introduction",
+    "Repeated homepage slogans removed and decorative panel omitted on mobile",
+    "Service navigation touch targets enlarged",
+    "Long service text columns stack at tablet widths",
+    "Skip link raised above sticky mobile masthead"
+  ],
+  "verification": {
+    "route_width_matrix": [
+      320,
+      641,
+      1024
+    ],
+    "routes": 10,
+    "horizontal_overflow": 0,
+    "broken_images": 0,
+    "additional_visual_widths": [
+      390,
+      768
+    ],
+    "landscape_menu": "640 x 320: bottom link reachable through menu scrolling",
+    "keyboard_escape": "closes menu and focuses summary",
+    "outside_click": "closes menu",
+    "back_to_top": "scrollY = 0",
+    "static_checker": "10 pages pass metadata, JSON-LD, local links, assets, sitemap"
+  },
+  "limits": [
+    "Browser viewport emulation, not physical iOS/Android device testing",
+    "No medical content or clinical claims changed in this audit"
+  ]
+}
