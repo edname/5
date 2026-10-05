@@ -150,6 +150,43 @@ PAGES = [
 ]
 
 
+
+def sections(content):
+    """Keep the reviewed copy, giving its existing headings semantic sections."""
+    parts = re.split(r'(?=<h2>)', content.strip())
+    return parts[0], [f'<section class="text-section">{part}</section>' for part in parts[1:]]
+
+
+def page_body(page, faq, sources, links):
+    slug = page['slug']
+    intro, parts = sections(page['content'])
+    heading = f'<header class="page-title"><h1>{escape(page["heading"])}</h1><p class="service-lead">{escape(page["lead"])}</p></header>'
+    if slug == 'apie-klinika':
+        content = f'<div class="about-opening"><div class="heritage-seal"><span>Nuo</span><strong>1997</strong><span>Privati gydytojos praktika</span></div><div class="opening-copy">{intro}{parts[0]}</div></div><div class="about-columns">{"".join(parts[1:])}</div>'
+    elif slug == 'paslaugos':
+        content = '<div class="service-catalog">' + page['content'] + '</div><p class="catalog-note">Dėl paslaugų kainų ir vizito laiko kviečiame <a href="/registracija/">susisiekti telefonu »</a></p>'
+    elif slug == 'registracija':
+        content = f'<div class="booking-opening">{intro}<div class="call-note">{parts[0]}</div></div><div class="booking-details">{"".join(parts[1:])}</div>'
+    elif slug == 'kontaktai':
+        # Address and arrival photo form one practical location page.
+        content = page['content']
+        photo = re.search(r'<figure.*?</figure>', content, re.S)[0]
+        content = content.replace(photo, '')
+        content = f'<div class="location-layout"><div class="location-details">{content}<h2>Telefonas</h2><p><a class="contact-phone" href="tel:+37052302235">+370 5 230 2235</a></p></div>{photo}</div>'
+    elif slug == 'ginekologo-konsultacija-vilniuje':
+        content = f'<div class="article-intro">{intro}</div><div class="consultation-layout"><div class="consultation-flow">{"".join(parts[:2])}</div><div class="visit-memo">{"".join(parts[2:])}</div></div>'
+    elif slug == 'ginekologine-echoskopija-vilniuje':
+        content = f'<div class="article-intro">{intro}</div><div class="examination-layout"><div>{parts[0]}{parts[2]}</div><div class="preparation-note">{parts[1]}</div></div><div class="address-strip">{parts[3]}</div>'
+    elif slug == 'nestumo-prieziura-vilniuje':
+        content = f'<div class="article-intro">{intro}</div><div class="pregnancy-layout"><div class="care-sequence">{parts[0]}{parts[1]}</div><div class="questions-note">{parts[2]}</div></div><div class="address-strip">{parts[3]}</div>'
+    elif slug == 'kontracepcijos-parinkimas':
+        content = f'<div class="article-intro">{intro}</div><div class="discussion-columns">{parts[0]}{parts[1]}</div><div class="preparation-band">{parts[2]}</div><div class="address-strip">{parts[3]}</div>'
+    else:
+        content = f'<div class="article-intro">{intro}</div><div class="prevention-layout"><div>{parts[0]}{parts[2]}</div><div class="prevention-note">{parts[1]}</div></div><div class="address-strip">{parts[3]}</div>'
+    related = f'<nav class="related-services" aria-label="Kitos klinikos paslaugos"><h2>Klinikos paslaugos</h2><ul>{links}</ul></nav>' if page in PAGES else ''
+    return f'<article class="tailored-page page-{slug}">{heading}{content}{faq}{sources}</article>{related}'
+
+
 def build():
     home = (ROOT / 'index.html').read_text()
     header = home[home.index('            <header'):home.index('            <main')]
@@ -198,19 +235,6 @@ def build():
             sources = '<section class="source-note"><h2>Papildoma informacija</h2><ul>' + ''.join(
                 f'<li><a href="{escape(url)}">{escape(label)}</a></li>' for label, url in page['sources']
             ) + '</ul></section>'
-        sidebar = page.get('sidebar', f'''
-                        <section class="appointment" aria-labelledby="appointment-title">
-                            <p class="section-kicker">Privati praktika nuo 1997 metų</p>
-                            <h2 id="appointment-title">Registracija vizitui</h2>
-                            <div class="ornament" aria-hidden="true">❧</div>
-                            <p>Dėl konsultacijos ir apžiūros susitarkite telefonu.</p>
-                            <a class="appointment-phone" href="tel:+37052302235">+370 5 230 2235</a>
-                            <a class="button" href="tel:+37052302235">Skambinti į kliniką</a>
-                            <p class="appointment-note">Gedvydžių g. 25, Vilnius<br>Vizito laikas derinamas telefonu.</p>
-                            <p class="phone-note">Gydytoja registraciją derina pati. Konsultacijos metu jos dėmesys skirtas pacientei, todėl ne visada pavyksta atsiliepti telefonu. Jei neprisiskambinote, maloniai prašome paskambinti vėliau. Ačiū už supratingumą.</p>
-                        </section>
-                        <nav class="service-menu" aria-label="Klinikos paslaugos"><h2>Klinikos paslaugos</h2><ul>{links}</ul></nav>
-''')
         faq_section = f'<section class="service-faq" aria-labelledby="klausimai"><h2 id="klausimai">Dažniausi klausimai</h2>{faq}</section>' if faq else ''
         output = f'''<!DOCTYPE html>
 <html lang="lt">
@@ -227,7 +251,7 @@ def build():
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="stylesheet" href="/css/styles.css?v=pages-1" />
+        <link rel="stylesheet" href="/css/styles.css?v=layouts-2" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
 {analytics}
     </head>
@@ -236,19 +260,7 @@ def build():
         <div class="site-sheet">
 {page_header}            <main id="turinys">
                 <nav class="breadcrumbs" aria-label="Puslapio vieta"><a href="/">Pradžia</a><span aria-hidden="true">»</span>{breadcrumb_parent}<span aria-current="page">{escape(page['label'])}</span></nav>
-                <div class="service-page-layout">
-                    <article class="service-content">
-                        <header class="service-page-heading">
-                            <p class="section-kicker">Privati praktika Vilniuje</p>
-                            <h1>{escape(page['heading'])}</h1>
-                            <p class="service-lead">{escape(page['lead'])}</p>
-                        </header>
-{page['content']}
-                        {faq_section}
-                        {sources}
-                    </article>
-                    <aside class="visit-sidebar service-page-sidebar" aria-label="Informacija apie vizitą">{sidebar}</aside>
-                </div>
+                {page_body(page, faq_section, sources, links)}
             </main>
 {footer}    </body>
 </html>

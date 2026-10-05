@@ -17,3 +17,7 @@ Commit the generated service directories with any template changes. Update the s
 `seo-research.json` records the keyword clusters, observed sources, scope constraints and measurement limitations. It is not a search-volume report. The `_tools` directory is maintenance material, excluded by GitHub Pages' default Jekyll handling of underscore-prefixed directories.
 
 Before publishing, run the checks, review the pages at desktop and mobile widths, and verify that descriptions accurately reflect clinic services. Prices, qualifications, clinical review attribution, procedure availability and opening hours require actual clinic information.
+
+## Puslapių išdėstymas
+
+`page_body()` generatoriuje parenka išdėstymą pagal puslapio paskirtį. Esamas tekstas skaidomas pagal H2 antraštes; keičiant jų skaičių ar tvarką reikia atnaujinti atitinkamą kompoziciją. Klinikos įėjimo nuotrauka rodoma tik kontaktų puslapyje. Paslaugų puslapiuose bendrą registracijos šoninę skiltį pakeičia konkrečiai temai skirti informaciniai blokai ir apatinė paslaugų navigacija.

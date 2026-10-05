@@ -245,3 +245,81 @@ footer { display: flex; justify-content: space-between; gap: 20px; margin: 0 9px
 .services .service h2 { font-size: 21px; }
 .services .service h2 a { color: inherit; text-decoration-thickness: 1px; }
 .services .service p { margin-left: 0; }
+
+/* Page-specific compositions, with shared traditional typography. */
+.home-practice-card { border: 4px double var(--line); padding: 35px 22px; text-align: center; background: var(--cream); }
+.practice-year { display: block; font-size: 29px; color: var(--wine); }
+.home-practice-card > p:not(.section-kicker) { font-size: 21px; font-style: italic; line-height: 1.9; }
+.tailored-page { padding: 27px 0 38px; }
+.page-title { padding: 0 0 25px; margin-bottom: 30px; border-bottom: 3px double var(--line); }
+.page-title .service-lead { max-width: 740px; }
+.text-section h2, .location-details h2 { font-size: 24px; margin-bottom: 14px; }
+.text-section p + p, .opening-copy > p + p { margin-top: 14px; }
+.text-section + .text-section { margin-top: 30px; }
+.text-section ul { padding-left: 20px; }
+.text-section li { margin-bottom: 12px; }
+.article-intro { max-width: 760px; margin-bottom: 32px; font-size: 17px; }
+.about-opening { display: grid; grid-template-columns: 220px minmax(0,1fr); gap: 42px; align-items: start; }
+.heritage-seal { border-block: 3px double var(--line); padding: 32px 15px; text-align: center; color: var(--wine); }
+.heritage-seal span { display: block; font-size: 15px; font-style: italic; }
+.heritage-seal strong { display: block; font-size: 62px; font-weight: 400; line-height: 1.5; }
+.opening-copy > .text-section { margin-top: 25px; }
+.about-columns, .booking-details, .discussion-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 38px; }
+.about-columns { border-top: 1px solid var(--line); margin-top: 35px; padding-top: 28px; }
+.about-columns > .text-section, .booking-details > .text-section, .discussion-columns > .text-section { margin-top: 0; }
+.service-catalog > p { max-width: 700px; margin-bottom: 22px; }
+.service-catalog .services { counter-reset: catalog; }
+.service-catalog .service { position: relative; padding: 24px 0 24px 66px; display: grid; grid-template-columns: 1fr 1.1fr; gap: 35px; align-items: baseline; }
+.service-catalog .service::before { counter-increment: catalog; content: '0' counter(catalog); position: absolute; left: 0; top: 18px; font-size: 30px; color: var(--gold); }
+.service-catalog .service p { margin: 0; }
+.catalog-note { margin-top: 28px; padding-top: 20px; border-top: 3px double var(--line); font-style: italic; }
+.booking-opening { display: grid; grid-template-columns: 1fr 1.2fr; gap: 36px; align-items: center; margin-bottom: 36px; }
+.booking-opening .registration-call { margin: 0; padding-block: 30px; }
+.call-note { padding: 12px 0; }
+.booking-details { padding-top: 26px; border-top: 3px double var(--line); }
+.location-layout { display: grid; grid-template-columns: 1fr 1.65fr; gap: 40px; align-items: start; }
+.location-details > h2:not(:first-child) { margin-top: 28px; }
+.location-details p { margin-top: 12px; }
+.location-layout .clinic-photo { margin: 5px; }
+.location-layout .photo-frame img { height: auto; aspect-ratio: auto; }
+.location-layout figcaption { text-align: left; font-size: 17px; }
+.consultation-layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; }
+.consultation-flow { counter-reset: consultation; }
+.consultation-flow .text-section { padding-left: 24px; border-left: 1px solid var(--line); }
+.consultation-flow h2::before { counter-increment: consultation; content: '0' counter(consultation) ' / '; font-size: 17px; color: var(--gold); }
+.visit-memo, .preparation-note, .questions-note { background: var(--cream); border: 4px double var(--line); padding: 26px; align-self: start; }
+.visit-memo h2, .preparation-note h2, .questions-note h2 { font-size: 22px; }
+.examination-layout { display: grid; grid-template-columns: 1.3fr 1fr; gap: 38px; }
+.pregnancy-layout { display: grid; grid-template-columns: 1.35fr 1fr; gap: 40px; }
+.care-sequence { border-left: 3px double var(--line); padding-left: 28px; }
+.care-sequence h2 { color: var(--wine); }
+.discussion-columns > section + section { padding-left: 35px; border-left: 1px solid var(--line); }
+.preparation-band { background: var(--cream); padding: 27px 30px; border-block: 1px solid var(--line); margin-top: 30px; }
+.prevention-layout { display: grid; grid-template-columns: 1.25fr 1fr; gap: 40px; }
+.prevention-note { border-top: 4px double var(--wine); background: #f3efe7; padding: 26px; align-self: start; font-size: 15px; }
+.address-strip { margin-top: 30px; padding-top: 23px; border-top: 1px solid var(--line); }
+.address-strip .text-section { max-width: 780px; }
+.tailored-page .service-faq { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 35px; }
+.tailored-page .service-faq > h2 { grid-column: 1 / -1; margin-bottom: 0; }
+.tailored-page .question + .question { margin-top: 0; }
+.related-services { padding: 23px 0 30px; border-top: 3px double var(--line); }
+.related-services h2 { font-size: 20px; }
+.related-services ul { display: flex; flex-wrap: wrap; gap: 8px 24px; list-style: none; padding: 0; margin: 14px 0 0; font-size: 14px; }
+.related-services a[aria-current] { color: var(--ink); text-decoration: none; }
+@media (max-width: 750px) {
+    .about-opening, .location-layout, .booking-opening, .consultation-layout, .examination-layout, .pregnancy-layout, .prevention-layout { grid-template-columns: 1fr; gap: 26px; }
+    .heritage-seal { padding: 18px; }
+    .heritage-seal strong { font-size: 48px; }
+    .service-catalog .service { grid-template-columns: 1fr; gap: 10px; padding-left: 50px; }
+    .about-columns, .booking-details, .discussion-columns { gap: 25px; }
+}
+@media (max-width: 540px) {
+    .about-columns, .booking-details, .discussion-columns, .tailored-page .service-faq { grid-template-columns: 1fr; }
+    .discussion-columns > section + section { padding: 23px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+    .page-title h1 { font-size: 29px; overflow-wrap: break-word; }
+    .page-title .service-lead { font-size: 18px; }
+    .visit-memo, .preparation-note, .questions-note, .prevention-note, .preparation-band { padding: 22px 18px; }
+    .home-practice-card { padding: 24px 18px; }
+    .related-services ul { display: block; }
+    .related-services li + li { margin-top: 10px; }
+}
