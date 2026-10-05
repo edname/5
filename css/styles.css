@@ -477,3 +477,13 @@ main:has(.page-registracija) > .breadcrumbs { max-width: 750px; margin-inline: a
     .home-actions { align-items: stretch; gap: 16px; }
     .home-actions > .button { text-align: center; min-height: 48px; }
 }
+
+/* Secondary actions stay visually light, with generous invisible hit areas. */
+.home-secondary-links a { border: 0; background: transparent; padding: 10px 0; }
+.home-secondary-links a:hover { background: transparent; }
+.home-secondary-links { gap: 12px 32px; }
+@media (max-width: 640px) {
+    .home-secondary-links { display: flex; flex-wrap: wrap; gap: 6px 28px; }
+    .home-actions { align-items: flex-start; }
+    .home-secondary-links a { justify-content: flex-start; }
+}
