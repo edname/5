@@ -458,3 +458,11 @@ main:has(.page-registracija) > .breadcrumbs { max-width: 750px; margin-inline: a
     .site-sheet::after { content: ''; position: absolute; inset: 7px 9px 9px; border: 1px solid var(--line); pointer-events: none; z-index: 1; }
     .masthead { border-color: transparent; }
 }
+
+/* One primary action, followed by an aligned pair of secondary links. */
+.home-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; margin-top: 24px; }
+.home-secondary-links { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 24px; }
+.home-secondary-links a { display: inline-block; padding-block: 8px; font-size: 14px; }
+@media (max-width: 360px) {
+    .home-secondary-links { column-gap: 18px; }
+}
