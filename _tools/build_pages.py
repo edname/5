@@ -29,7 +29,6 @@ PAGES = [
             <p>Dėl konsultacijos kainos, galimų papildomų tyrimų ir priėmimo laiko prašome skambinti <a href="tel:+37052302235">+370 5 230 2235</a>. Registruojantis galima patikslinti, kokios paslaugos planuojamos ir kiek jos kainuotų.</p>
         ''',
         'faq': [
-            ('Kokia gydytoja mane priims?', 'Jus priims gydytoja akušerė-ginekologė G. Karpenko. Ji konsultuoja, atlieka apžiūras ir rūpinasi tolesne priežiūra, todėl sugrįžusi bendrausite su ta pačia gydytoja.'),
             ('Ar galima atvykti pirmajai ginekologo konsultacijai?', 'Taip, galite registruotis pirmajai konsultacijai. Pasakykite, kad tai pirmas Jūsų vizitas, ir išsakykite rūpimus klausimus ar nerimą.'),
             ('Ar kiekvienos konsultacijos metu atliekama echoskopija?', 'Klinikoje atliekami echoskopiniai tyrimai, tačiau konkretaus tyrimo poreikis aptariamas su gydytoja. Registruojantis pasiteiraukite ir dėl jo kainos.'),
         ],
@@ -216,7 +215,7 @@ def build():
                 <div class="service-page-layout">
                     <article class="service-content">
                         <header class="service-page-heading">
-                            <p class="section-kicker">G. Karpenko klinika · Vilnius</p>
+                            <p class="section-kicker">Privati praktika Vilniuje</p>
                             <h1>{escape(page['heading'])}</h1>
                             <p class="service-lead">{escape(page['lead'])}</p>
                         </header>
@@ -229,7 +228,7 @@ def build():
                             <p class="section-kicker">Privati praktika nuo 1997 metų</p>
                             <h2 id="appointment-title">Registracija vizitui</h2>
                             <div class="ornament" aria-hidden="true">❧</div>
-                            <p>Jus priima pati gydytoja<br>akušerė-ginekologė G. Karpenko.</p>
+                            <p>Dėl konsultacijos ir apžiūros susitarkite telefonu.</p>
                             <a class="appointment-phone" href="tel:+37052302235">+370 5 230 2235</a>
                             <a class="button" href="tel:+37052302235">Skambinti į kliniką</a>
                             <p class="appointment-note">Gedvydžių g. 25, Vilnius<br>Vizito laikas derinamas telefonu.</p>
