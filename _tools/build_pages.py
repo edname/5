@@ -16,12 +16,12 @@ PAGES = [
         'heading': 'Ginekologo konsultacija Vilniuje',
         'lead': 'Laikas Jūsų klausimams, atidi apžiūra ir individualus dėmesys moters sveikatai.',
         'content': '''
-            <p>Šioje privačioje klinikoje dirba viena gydytoja – akušerė-ginekologė G. Karpenko. Ji pati konsultuoja moteris, norinčias aptarti savo sveikatą, pasitikrinti ar išsiaiškinti atsiradusių negalavimų priežastį. Privačia praktika gydytoja užsiima nuo 1997 metų, o pacientes priima Gedvydžių g. 25, Vilniuje.</p>
+            <p>Privačioje klinikoje Jus priima gydytoja akušerė-ginekologė G. Karpenko. Per konsultaciją galite ramiai aptarti savo sveikatą, pasitikrinti ar pasikalbėti apie atsiradusius negalavimus. Privačia praktika gydytoja užsiima nuo 1997 metų, o pacientes priima Gedvydžių g. 25, Vilniuje.</p>
             <h2>Ką galima aptarti per konsultaciją?</h2>
             <p>Vizitas skirtas būtent Jūsų klausimams. Galite kreiptis dėl ginekologinių nusiskundimų, ankstesnių tyrimų rezultatų, profilaktinės apžiūros, kontracepcijos ar nėštumo priežiūros. Registruojantis verta trumpai pasakyti, dėl ko norėtumėte atvykti.</p>
             <p>Klinikoje atliekama ginekologinių ligų diagnostika ir gydymas, įskaitant virusinius, bakterinius bei grybelinius susirgimus. Konsultacijos ir apžiūros metu aptariama, koks ištyrimas reikalingas Jūsų situacijoje.</p>
             <h2>Pokalbis, apžiūra ir tolesni žingsniai</h2>
-            <p>Pokalbio metu galite papasakoti apie savijautą, sveikatos istoriją ir tai, kas kelia nerimą. Gydytoja skiria laiko išklausyti bei atsakyti į klausimus. Apžiūros ir tyrimų poreikis aptariamas individualiai; visoms pacientėms vienodas tyrimų rinkinys netaikomas.</p>
+            <p>Pokalbio metu galite papasakoti apie savijautą, sveikatos istoriją ir tai, kas kelia nerimą. Gydytoja skiria laiko išklausyti bei atsakyti į klausimus. Apžiūros ir tyrimų poreikį gydytoja aptaria su Jumis, atsižvelgdama į sveikatos istoriją ir vizito priežastį.</p>
             <p>Jeigu reikalingas ultragarsinis tyrimas, daugiau apie jį rasite puslapyje <a href="/ginekologine-echoskopija-vilniuje/">ginekologinė echoskopija</a>. Jei norite pasitikrinti be konkretaus nusiskundimo, skaitykite apie <a href="/profilaktinis-ginekologinis-patikrinimas/">profilaktinę ginekologinę patikrą</a>.</p>
             <h2>Prieš atvykstant į kliniką</h2>
             <p>Galite užsirašyti norimus aptarti klausimus ir pasiruošti turimus ankstesnių tyrimų atsakymus bei informaciją apie vartojamus vaistus. Taip per pokalbį bus lengviau prisiminti Jums svarbias aplinkybes. Dėl pasiruošimo konkrečiai apžiūrai pasiteiraukite registruodamasi.</p>
@@ -29,7 +29,7 @@ PAGES = [
             <p>Dėl konsultacijos kainos, galimų papildomų tyrimų ir priėmimo laiko prašome skambinti <a href="tel:+37052302235">+370 5 230 2235</a>. Registruojantis galima patikslinti, kokios paslaugos planuojamos ir kiek jos kainuotų.</p>
         ''',
         'faq': [
-            ('Kokia gydytoja mane priims?', 'Klinikoje dirba viena gydytoja – akušerė-ginekologė G. Karpenko. Ji pati konsultuoja pacientes ir atlieka apžiūras, todėl registruodamasi žinote, pas ką atvyksite.'),
+            ('Kokia gydytoja mane priims?', 'Jus priims gydytoja akušerė-ginekologė G. Karpenko. Ji konsultuoja, atlieka apžiūras ir rūpinasi tolesne priežiūra, todėl sugrįžusi bendrausite su ta pačia gydytoja.'),
             ('Ar galima atvykti pirmajai ginekologo konsultacijai?', 'Taip, galite registruotis pirmajai konsultacijai. Pasakykite, kad tai pirmas Jūsų vizitas, ir išsakykite rūpimus klausimus ar nerimą.'),
             ('Ar kiekvienos konsultacijos metu atliekama echoskopija?', 'Klinikoje atliekami echoskopiniai tyrimai, tačiau konkretaus tyrimo poreikis aptariamas su gydytoja. Registruojantis pasiteiraukite ir dėl jo kainos.'),
         ],
@@ -43,7 +43,7 @@ PAGES = [
         'heading': 'Ginekologinė echoskopija Vilniuje',
         'lead': 'Ultragarsinis tyrimas ir jo rezultatų aptarimas su gydytoja akušere-ginekologe.',
         'content': '''
-            <p>Privačioje klinikoje echoskopinius tyrimus atlieka pati gydytoja akušerė-ginekologė G. Karpenko. Tai ginekologinio ištyrimo dalis. Dėl ginekologinės echoskopijos Vilniuje galite registruotis telefonu, trumpai nurodydama, ar kreipiatės dėl konkretaus nusiskundimo, ar dėl ankstesnio tyrimo aptarimo.</p>
+            <p>Echoskopinius tyrimus klinikoje atlieka gydytoja akušerė-ginekologė G. Karpenko. Tai ginekologinio ištyrimo dalis. Dėl ginekologinės echoskopijos Vilniuje galite registruotis telefonu, trumpai nurodydama, ar kreipiatės dėl konkretaus nusiskundimo, ar dėl ankstesnio tyrimo aptarimo.</p>
             <h2>Kas yra ginekologinė echoskopija?</h2>
             <p>Echoskopija, dar vadinama ultragarsiniu tyrimu, leidžia vaizdu įvertinti vidaus organus. Tyrimui naudojamos garso bangos, o ne rentgeno spinduliai. Ginekologijoje ultragarsas padeda gydytojai įvertinti mažojo dubens organus ir papildyti konsultacijos bei apžiūros informaciją.</p>
             <p>Tyrimo rezultatai vertinami kartu su Jūsų savijauta ir sveikatos istorija. Vien echoskopijos gali nepakakti visiems klausimams atsakyti – tolesnį ištyrimą gydytoja aptaria pagal individualią situaciją.</p>
@@ -58,7 +58,7 @@ PAGES = [
         ''',
         'faq': [
             ('Ar echoskopija ir ultragarsinis tyrimas reiškia tą patį?', 'Taip, tai du to paties tyrimo metodo pavadinimai. Registruojantis galite vartoti bet kurį iš jų.'),
-            ('Ar prieš tyrimą reikia gerti vandens?', 'Tai priklauso nuo tyrimo būdo. Pasiruošimą patikslinkite su klinika registruodamasi; nesivadovaukite kito žmogaus tyrimui skirtomis instrukcijomis.'),
+            ('Ar prieš tyrimą reikia gerti vandens?', 'Tai priklauso nuo tyrimo būdo. Registruodamasi pasiteiraukite, kaip pasiruošti būtent Jums numatytam tyrimui.'),
         ],
         'sources': [('NHS: apie ultragarsinį tyrimą ir pasiruošimą (anglų kalba)', 'https://www.nhs.uk/tests-and-treatments/ultrasound-scan/')],
     },
@@ -70,13 +70,13 @@ PAGES = [
         'heading': 'Nėštumo nustatymas ir priežiūra Vilniuje',
         'lead': 'Gydytojos akušerės-ginekologės dėmesys Jums ir besivystančiam nėštumui.',
         'content': '''
-            <p>Nėštumo nustatymu ir nėščiųjų priežiūra šioje privačioje klinikoje rūpinasi pati gydytoja G. Karpenko. Ji yra vienintelė klinikoje dirbanti gydytoja. Pacientės priimamos Vilniuje, Gedvydžių g. 25. Gydytoja privačia praktika užsiima nuo 1997 metų ir skiria laiko konsultacijai bei Jūsų klausimams.</p>
+            <p>Nėštumo nustatymu ir nėščiųjų priežiūra klinikoje rūpinasi gydytoja G. Karpenko. Per tolesnius vizitus su ja galite aptarti savijautos pokyčius, tyrimų atsakymus ir naujai kilusius klausimus. Pacientės priimamos Vilniuje, Gedvydžių g. 25. Gydytoja privačia praktika užsiima nuo 1997 metų ir skiria laiko konsultacijai bei Jūsų klausimams.</p>
             <h2>Nėštumo nustatymas</h2>
             <p>Jeigu norite patvirtinti nėštumą ir aptarti tolesnę priežiūrą, registruodamasi nurodykite vizito priežastį. Klinikoje atliekamas ankstyvas nėštumo nustatymas, o reikalingas ištyrimas parenkamas pagal individualią situaciją.</p>
             <p>Pirmojo pokalbio metu naudinga aptarti turimus tyrimų rezultatus, ankstesnių nėštumų informaciją, vartojamus vaistus bei kitus sveikatos klausimus. Jei turite ankstesnių išrašų, galite juos atsinešti. Registruojantis pasiteiraukite, kokia informacija būtų naudinga Jūsų vizitui.</p>
             <h2>Nėščiųjų priežiūra ir vaisiaus stebėjimas</h2>
             <p>Klinikos paslaugos apima nėščiųjų priežiūrą, vaisiaus stebėjimą ir tyrimus nėštumo metu. Vizitai suteikia galimybę aptarti savijautą, tyrimų atsakymus bei tolesnius priežiūros žingsnius.</p>
-            <p>Nėštumo priežiūra nėra vienas tyrimas: apsilankymų ir ištyrimo planas priklauso nuo nėštumo eigos bei sveikatos aplinkybių. Konkrečius tyrimus ir jų laiką aptarkite su gydytoja.</p>
+            <p>Apsilankymų ir ištyrimo planas priklauso nuo nėštumo eigos bei sveikatos aplinkybių. Konkrečius tyrimus ir jų laiką aptarkite su gydytoja.</p>
             <h2>Klausimai, kuriuos verta aptarti</h2>
             <ul>
                 <li>Kokios priežiūros reikės artimiausiu nėštumo laikotarpiu?</li>
@@ -102,7 +102,7 @@ PAGES = [
         'heading': 'Individualus kontracepcijos parinkimas',
         'lead': 'Konsultacija apie apsisaugojimo nuo nėštumo būdus, atsižvelgiant į Jūsų sveikatą ir poreikius.',
         'content': '''
-            <p>Dėl hormoninės ir nehormoninės kontracepcijos privačioje klinikoje Vilniuje konsultuoja pati gydytoja G. Karpenko. Parenkant metodą atsižvelgiama į sveikatos istoriją, gyvenimo būdą ir individualią organizmo reakciją į kontraceptines priemones.</p>
+            <p>Dėl hormoninės ir nehormoninės kontracepcijos privačioje klinikoje Vilniuje konsultuoja gydytoja G. Karpenko. Parenkant metodą atsižvelgiama į sveikatos istoriją, gyvenimo būdą ir individualią organizmo reakciją į kontraceptines priemones.</p>
             <h2>Pasirinkimas prasideda nuo pokalbio</h2>
             <p>Kontracepcijos būdai skiriasi naudojimu ir tinkamumu konkrečiam žmogui. Konsultacijos metu svarbu aptarti, ko tikitės iš pasirinkto metodo, kokias priemones jau naudojote ir kaip jautėtės jas vartodama. Draugei tinkantis pasirinkimas nebūtinai atitiks Jūsų poreikius.</p>
             <p>Pasaulio sveikatos organizacija nurodo, kad metodo pasirinkimas priklauso nuo asmens sveikatos, pageidavimų ir poreikių. Sveikatos priežiūros specialisto konsultacija padeda įvertinti tinkamas galimybes.</p>
@@ -129,7 +129,7 @@ PAGES = [
         'heading': 'Profilaktinis ginekologinis patikrinimas',
         'lead': 'Laikas pasirūpinti savo sveikata ir aptarti profilaktiką su gydytoja.',
         'content': '''
-            <p>Profilaktinius ginekologinius patikrinimus privačioje klinikoje Vilniuje atlieka pati gydytoja G. Karpenko. Tai galimybė aptarti sveikatą ir prevenciją, net jei šiuo metu neturite konkretaus nusiskundimo. Vizito apimtis derinama individualiai.</p>
+            <p>Profilaktinius ginekologinius patikrinimus privačioje klinikoje Vilniuje atlieka gydytoja G. Karpenko. Tai galimybė aptarti sveikatą ir prevenciją, net jei šiuo metu neturite konkretaus nusiskundimo. Vizito apimtis derinama individualiai.</p>
             <h2>Ką galima aptarti profilaktinio vizito metu?</h2>
             <p>Per konsultaciją galite užduoti klausimus apie ankstesnių patikrų rezultatus, tolesnį stebėjimą, krūties ir gimdos kaklelio vėžio prevenciją. Gydytoja įvertina Jūsų sveikatos istoriją ir aptaria, kokia apžiūra ar tyrimai reikalingi.</p>
             <p>Profilaktinė patikra nėra vienodas tyrimų paketas visoms moterims. Jei registruodamasi norite konkretaus tyrimo, paminėkite jį ir pasiteiraukite apie prieinamumą, pasiruošimą bei kainą. <a href="/ginekologine-echoskopija-vilniuje/">Echoskopinis tyrimas</a> ir gimdos kaklelio patikra yra skirtingos ištyrimo dalys.</p>
@@ -233,7 +233,7 @@ def build():
                             <a class="appointment-phone" href="tel:+37052302235">+370 5 230 2235</a>
                             <a class="button" href="tel:+37052302235">Skambinti į kliniką</a>
                             <p class="appointment-note">Gedvydžių g. 25, Vilnius<br>Vizito laikas derinamas telefonu.</p>
-                            <p class="phone-note">Gydytoja pacientes priima ir registruoja pati. Konsultacijos ar apžiūros metu ji ne visada gali atsiliepti. Jei nepavyko prisiskambinti, prašome paskambinti vėliau. Dėkojame už supratingumą.</p>
+                            <p class="phone-note">Gydytoja registraciją derina pati. Konsultacijos metu jos dėmesys skirtas pacientei, todėl ne visada pavyksta atsiliepti telefonu. Jei neprisiskambinote, maloniai prašome paskambinti vėliau. Ačiū už supratingumą.</p>
                         </section>
                         <nav class="service-menu" aria-label="Klinikos paslaugos"><h2>Klinikos paslaugos</h2><ul>{links}</ul></nav>
                     </aside>
