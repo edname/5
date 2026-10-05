@@ -32,5 +32,31 @@
   "limits": [
     "Browser viewport emulation, not physical iOS/Android device testing",
     "No medical content or clinical claims changed in this audit"
-  ]
+  ],
+  "second_pass": {
+    "date": "2026-10-05",
+    "changes": [
+      "Contact address, map and phone grouped before arrival instructions",
+      "FAQ converted to native keyboard-accessible disclosures",
+      "Current service excluded from related-service links",
+      "Breadcrumb alignment matches narrow article columns",
+      "Mobile inset text spacing reduced",
+      "404 mobile margins and typography improved",
+      "Menu closes when keyboard focus leaves disclosure"
+    ],
+    "verification": {
+      "routes_including_404": 11,
+      "widths": [
+        320,
+        768,
+        1280
+      ],
+      "overflow": 0,
+      "missing_images": 0,
+      "faq_mouse_toggle": "pass",
+      "faq_enter_toggle": "pass",
+      "back_to_top_scrollY": 0
+    },
+    "limits": "Viewport emulation in in-app browser; not physical device or cross-browser certification"
+  }
 }

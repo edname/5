@@ -12,6 +12,9 @@ if (menu) {
         if (!menu.contains(event.target)) menu.open = false;
         else if (event.target.closest('a')) menu.open = false;
     });
+    document.addEventListener('focusin', (event) => {
+        if (!menu.contains(event.target)) menu.open = false;
+    });
     window.addEventListener('pageshow', () => { menu.open = false; });
     window.matchMedia('(min-width: 641px)').addEventListener('change', (event) => {
         if (event.matches) menu.open = false;

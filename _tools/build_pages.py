@@ -172,7 +172,8 @@ def page_body(page, faq, sources, links):
         content = page['content']
         photo = re.search(r'<figure.*?</figure>', content, re.S)[0]
         content = content.replace(photo, '')
-        content = f'<div class="location-layout"><div class="location-details">{content}<h2>Telefonas</h2><p><a class="contact-phone" href="tel:+37052302235">+370 5 230 2235</a></p></div>{photo}</div>'
+        address, arrival = content.split('<h2>Atvykimas į kliniką</h2>')
+        content = f'<div class="location-layout"><div class="location-details">{address}<h2>Registracija telefonu</h2><p><a class="contact-phone" href="tel:+37052302235">+370 5 230 2235</a></p><p>Vizito laikas derinamas iš anksto.</p></div>{photo}</div><section class="arrival-note"><h2>Atvykimas į kliniką</h2>{arrival}</section>'
     elif slug == 'ginekologo-konsultacija-vilniuje':
         content = f'<div class="article-intro">{intro}</div><div class="consultation-layout"><div class="consultation-flow">{"".join(parts[:2])}</div><div class="visit-memo">{"".join(parts[2:])}</div></div>'
     elif slug == 'ginekologine-echoskopija-vilniuje':
@@ -183,7 +184,7 @@ def page_body(page, faq, sources, links):
         content = f'<div class="article-intro">{intro}</div><div class="discussion-columns">{parts[0]}{parts[1]}</div><div class="preparation-band">{parts[2]}</div><div class="address-strip">{parts[3]}</div>'
     else:
         content = f'<div class="article-intro">{intro}</div><div class="prevention-layout"><div>{parts[0]}{parts[2]}</div><div class="prevention-note">{parts[1]}</div></div><div class="address-strip">{parts[3]}</div>'
-    related = f'<nav class="related-services" aria-label="Kitos klinikos paslaugos"><h2>Klinikos paslaugos</h2><ul>{links}</ul></nav>' if page in PAGES else ''
+    related = f'<nav class="related-services" aria-label="Kitos klinikos paslaugos"><h2>Kitos paslaugos</h2><ul>{links}</ul></nav>' if page in PAGES else ''
     return f'<article class="tailored-page page-{slug}">{heading}{content}{faq}{sources}</article>{related}'
 
 
@@ -227,9 +228,9 @@ def build():
         breadcrumb_parent = '<a href="/paslaugos/">Paslaugos</a><span aria-hidden="true">»</span>' if is_service else ''
         links = '\n'.join(
             f'<li><a href="/{p["slug"]}/"' + (' aria-current="page"' if p == page else '') + f'>{escape(p["label"])}</a></li>'
-            for p in PAGES
+            for p in PAGES if p != page
         )
-        faq = '\n'.join(f'<section class="question"><h3>{escape(q)}</h3><p>{escape(a)}</p></section>' for q, a in page.get('faq', []))
+        faq = '\n'.join(f'<details class="question"><summary>{escape(q)}</summary><p>{escape(a)}</p></details>' for q, a in page.get('faq', []))
         sources = ''
         if page.get('sources'):
             sources = '<section class="source-note"><h2>Papildoma informacija</h2><ul>' + ''.join(
@@ -251,7 +252,7 @@ def build():
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="stylesheet" href="/css/styles.css?v=audit-6" />
+        <link rel="stylesheet" href="/css/styles.css?v=audit-7" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
 {analytics}
     </head>

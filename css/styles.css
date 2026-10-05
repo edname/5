@@ -429,3 +429,29 @@ footer { display: flex; justify-content: space-between; gap: 20px; margin: 0 9px
     .tailored-page .service-faq { gap: 24px; }
     .source-note a { overflow-wrap: anywhere; }
 }
+
+/* Second audit: consistent alignment and clearer information priorities. */
+main:has(.page-apie-klinika) > .breadcrumbs,
+main:has(.page-registracija) > .breadcrumbs { max-width: 750px; margin-inline: auto; }
+.arrival-note { border-top: 3px double var(--line); margin-top: 32px; padding-top: 25px; }
+.arrival-note h2 { font-size: 24px; margin-bottom: 13px; }
+.arrival-note p { max-width: 740px; margin-top: 12px; }
+.tailored-page .service-faq { display: block; }
+.tailored-page .service-faq > h2 { margin-bottom: 18px; }
+.question { border-top: 1px solid var(--line); }
+.question:last-child { border-bottom: 1px solid var(--line); }
+.question summary { display: flex; justify-content: space-between; gap: 18px; align-items: baseline; padding: 16px 3px; cursor: pointer; list-style: none; font-size: 19px; line-height: 1.5; color: var(--wine-dark); }
+.question summary::-webkit-details-marker { display: none; }
+.question summary::after { content: '+'; color: var(--wine); font-size: 24px; flex-shrink: 0; line-height: 1; }
+.question[open] summary::after { content: '−'; }
+.question summary:hover { background: var(--cream); }
+.question summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.question p { max-width: 740px; margin: 0; padding: 0 3px 20px; }
+.source-note { font-size: 14px; }
+@media (max-width: 640px) {
+    .consultation-flow .text-section, .care-sequence { padding-left: 14px; }
+    .arrival-note { margin-top: 25px; }
+    .question summary { font-size: 18px; padding-block: 15px; }
+    .error-page { width: calc(100% - 28px); margin-block: 32px; padding: 25px 20px; }
+    .error-page h1 { font-size: 52px; margin-block: 12px; }
+}
