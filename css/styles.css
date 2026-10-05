@@ -466,3 +466,14 @@ main:has(.page-registracija) > .breadcrumbs { max-width: 750px; margin-inline: a
 @media (max-width: 360px) {
     .home-secondary-links { column-gap: 18px; }
 }
+
+/* Comfortable, separate targets for the two secondary home actions. */
+.home-secondary-links { gap: 12px 20px; }
+.home-secondary-links a { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 10px 16px; border: 1px solid var(--line); background: var(--paper); }
+.home-secondary-links a:hover { background: var(--cream); border-color: var(--gold); }
+@media (max-width: 640px) {
+    .home-secondary-links { display: grid; grid-template-columns: 1fr; gap: 12px; width: 100%; }
+    .home-secondary-links a { justify-content: flex-start; }
+    .home-actions { align-items: stretch; gap: 16px; }
+    .home-actions > .button { text-align: center; min-height: 48px; }
+}
