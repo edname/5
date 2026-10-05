@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-      <loc>https://karpenko.lt/</loc>
-      <lastmod>2021-12-21</lastmod>
-</url>
+  <url>
+    <loc>https://karpenko.lt/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://karpenko.lt/ginekologo-konsultacija-vilniuje/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://karpenko.lt/ginekologine-echoskopija-vilniuje/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://karpenko.lt/nestumo-prieziura-vilniuje/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://karpenko.lt/kontracepcijos-parinkimas/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
+  <url>
+    <loc>https://karpenko.lt/profilaktinis-ginekologinis-patikrinimas/</loc>
+    <lastmod>2026-10-05</lastmod>
+  </url>
 </urlset>

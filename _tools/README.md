@@ -1,0 +1,19 @@
+# Static service pages
+
+The repository is served directly by GitHub Pages on `gh-pages`, with the custom domain in `CNAME`. All public pages are committed HTML. No browser-side router, package installation or deployment build is required.
+
+Edit the home page in `index.html` and the service copy in `PAGES` in `_tools/build_pages.py`. That script reuses the home page header, contact block, footer and clinic identity to keep those details consistent across pages.
+
+From the repository root:
+
+```sh
+python3 _tools/build_pages.py
+python3 _tools/check_site.py
+python3 -m http.server 8000 --bind 127.0.0.1
+```
+
+Commit the generated service directories with any template changes. Update the sitemap and its `lastmod` dates when published content changes; dates must reflect actual edits. If adding a new service, update the home page links and sitemap as well. Use trailing-slash canonical URLs consistently. `css/styles.css` is shared by every page; its query version should change when a release needs a cache refresh.
+
+`seo-research.json` records the keyword clusters, observed sources, scope constraints and measurement limitations. It is not a search-volume report. The `_tools` directory is maintenance material, excluded by GitHub Pages' default Jekyll handling of underscore-prefixed directories.
+
+Before publishing, run the checks, review the pages at desktop and mobile widths, and verify that descriptions accurately reflect clinic services. Prices, qualifications, clinical review attribution, procedure availability and opening hours require actual clinic information.

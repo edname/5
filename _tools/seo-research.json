@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-05",
+  "language": "lt",
+  "market": "Vilnius, Lithuania",
+  "method": "Qualitative web search result review, one live Google Search sample in Lithuanian (hl=lt, gl=lt), clinic service inventory and official Google Search documentation. Not a controlled ranking or search-volume audit.",
+  "metrics": {
+    "search_volume": null,
+    "keyword_difficulty": null,
+    "cpc": null,
+    "reason": "No access to Keyword Planner, Search Console or paid keyword datasets. Priority reflects service relevance and user intent, not measured demand."
+  },
+  "queries": [
+    "privatus ginekologas Vilniuje ginekologo konsultacija",
+    "akušerė ginekologė Vilnius nėštumo priežiūra",
+    "ginekologinis kabinetas Vilnius Fabijoniškės",
+    "ginekologinė echoskopija Vilniuje",
+    "nėštumo priežiūra Vilniuje klinika",
+    "kontracepcijos parinkimas ginekologas",
+    "profilaktinis ginekologinis patikrinimas Vilniuje klinika"
+  ],
+  "keyword_map": [
+    {
+      "url": "/",
+      "primary": "privatus ginekologas Vilniuje",
+      "secondary": [
+        "privati ginekologijos klinika Vilniuje",
+        "ginekologinis kabinetas Vilniuje",
+        "ginekologė Vilniuje",
+        "akušerė ginekologė Vilniuje",
+        "G. Karpenko"
+      ],
+      "priority": "high",
+      "intent": "Find a local clinic and clinician",
+      "evidence": [
+        "https://www.hila.lt/gydytojai/akuseriai-ginekologai/",
+        "https://vilnelesklinikos.lt/paslaugos/ginekologas/"
+      ]
+    },
+    {
+      "url": "/ginekologo-konsultacija-vilniuje/",
+      "primary": "ginekologo konsultacija Vilniuje",
+      "secondary": [
+        "akušerio ginekologo konsultacija",
+        "privati ginekologo konsultacija",
+        "pirmas vizitas pas ginekologą"
+      ],
+      "priority": "high",
+      "intent": "Understand and book a consultation",
+      "evidence": [
+        "https://www.akuserisginekologas.lt/",
+        "https://privatus-gydytojas.lt/ginekologo-paslaugos/"
+      ]
+    },
+    {
+      "url": "/ginekologine-echoskopija-vilniuje/",
+      "primary": "ginekologinė echoskopija Vilniuje",
+      "secondary": [
+        "ginekologinis ultragarsinis tyrimas",
+        "ginekologinė echoskopija pasiruošimas"
+      ],
+      "priority": "high",
+      "intent": "Find a specific diagnostic service and preparation information",
+      "evidence": [
+        "https://nmc.lt/medicinos-paslaugos/ginekologija/ginekologine-echoskopija/",
+        "https://www.sveikata-jums.lt/paslauga/ginekologine-echoskopija"
+      ]
+    },
+    {
+      "url": "/nestumo-prieziura-vilniuje/",
+      "primary": "nėštumo priežiūra Vilniuje",
+      "secondary": [
+        "nėščiųjų priežiūra",
+        "nėštumo nustatymas Vilniuje",
+        "privati nėštumo priežiūra"
+      ],
+      "priority": "high",
+      "intent": "Arrange pregnancy confirmation and ongoing care",
+      "evidence": [
+        "https://medklinika.lt/nestumas/",
+        "https://maxmeda.lt/nestumo-prieziura-vilniuje/"
+      ]
+    },
+    {
+      "url": "/kontracepcijos-parinkimas/",
+      "primary": "kontracepcijos parinkimas Vilniuje",
+      "secondary": [
+        "individualus kontracepcijos parinkimas",
+        "hormoninė ir nehormoninė kontracepcija",
+        "konsultacija dėl kontracepcijos"
+      ],
+      "priority": "focused",
+      "intent": "Discuss a contraceptive method with a clinician",
+      "evidence": [
+        "https://privatusginekologas.lt/paslauga/kontracepcijos-parinkimas/"
+      ]
+    },
+    {
+      "url": "/profilaktinis-ginekologinis-patikrinimas/",
+      "primary": "profilaktinė ginekologinė patikra Vilniuje",
+      "secondary": [
+        "profilaktinis ginekologinis patikrinimas",
+        "ginekologinė apžiūra",
+        "gimdos kaklelio vėžio prevencija"
+      ],
+      "priority": "focused",
+      "intent": "Book a preventive check and understand screening questions",
+      "evidence": [
+        "https://www.sveikata-jums.lt/paslauga/profilaktine-patikra",
+        "https://privatusginekologas.lt/paslaugos/"
+      ]
+    }
+  ],
+  "content_rules": [
+    "Combine male/female and inflection variants in one service intent rather than duplicate pages.",
+    "Clinic service scope comes from the original site; competitor pages demonstrate vocabulary only.",
+    "No fake medical reviewer, ratings, qualifications, opening hours, prices or reimbursement claims.",
+    "No meta keywords tag, hidden keyword blocks or near-duplicate district landing pages.",
+    "Medical background sources appear on applicable service pages."
+  ],
+  "deferred_terms": [
+    {
+      "terms": [
+        "ginekologo konsultacijos kaina",
+        "ginekologinė echoskopija kaina"
+      ],
+      "reason": "No confirmed price list. Existing service pages answer how to obtain prices; add actual approved pricing here when available."
+    },
+    {
+      "terms": [
+        "geriausias ginekologas",
+        "nemokamas ginekologas",
+        "ginekologas be siuntimo"
+      ],
+      "reason": "Do not make unverified superiority, payment or referral claims."
+    },
+    {
+      "terms": [
+        "akušerė"
+      ],
+      "reason": "Standalone midwifery intent differs from the existing physician obstetrician-gynaecologist service."
+    },
+    {
+      "terms": [
+        "nevaisingumo gydymas",
+        "spiralės įvedimas",
+        "3D 4D echoskopija",
+        "ginekologas Kaune"
+      ],
+      "reason": "These procedures or locations are not established in the clinic service inventory."
+    }
+  ],
+  "google_sources": [
+    "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "https://developers.google.com/search/docs/essentials/spam-policies",
+    "https://developers.google.com/search/docs/appearance/snippet",
+    "https://developers.google.com/search/docs/appearance/structured-data/breadcrumb"
+  ],
+  "measurement_next_steps": [
+    "Verify the owned domain in Search Console and submit https://karpenko.lt/sitemap.xml.",
+    "After indexing and sufficient data, compare impressions, clicks, CTR and query/page pairs over comparable periods.",
+    "Use Lithuania-targeted Keyword Planner estimates if available; revisit priorities based on actual demand and conversions.",
+    "Publishing does not guarantee crawling, indexing, rich results or ranking."
+  ],
+  "google_sample": {
+    "query": "privatus ginekologas Vilniuje",
+    "date": "2026-10-05",
+    "locale_parameters": {
+      "hl": "lt",
+      "gl": "lt"
+    },
+    "observations": [
+      "Results include ads, local clinic listings and organic provider pages.",
+      "G. Karpenko clinic appeared in the related local websites section of this single sample; this is not a stable ranking claim.",
+      "Related searches include price, reviews, referrals, urgent visits and other locations. Only verified clinic offerings should be targeted."
+    ],
+    "related_searches": [
+      "ginekologas vilniuje atsiliepimai",
+      "geriausi ginekologai vilniuje",
+      "ginekologas vilniuje kaina",
+      "ginekologas vilniuje su siuntimu",
+      "nemokamas ginekologas vilniuje",
+      "privatus ginekologas kaune",
+      "ginekologas vilniuje santariskes",
+      "ginekologas vilniuje skubiai"
+    ]
+  }
+}
