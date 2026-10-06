@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-06",
+  "type": "editorial_and_source_consistency_review",
+  "clinical_review_by_doctor": false,
+  "availability_source": "clinic-price-list.json",
+  "scope": "Visų 5 detalių paslaugų puslapių įžangos, skiltys, DUK, šaltiniai ir metaduomenys; paslaugų katalogas ir trumpi papildomų procedūrų aprašymai.",
+  "sources": {
+    "uneja": "https://www.klinikauneja.lt/paslaugos/ginekologija/",
+    "hila_gyn": "https://www.hila.lt/paslaugos-ir-kainos/akuserija-ginekologija/",
+    "hila_tests": "https://www.hila.lt/paslaugos-ir-kainos/tyrimai/akuserijos-ir-ginekologiniai-tyrimai/",
+    "hila_iud": "https://www.hila.lt/paslaugos-ir-kainos/akuserija-ginekologija/spirales-idejimas/",
+    "nhs_ultrasound": "https://www.nhs.uk/tests-and-treatments/ultrasound-scan/",
+    "nhs_pregnancy": "https://www.nhs.uk/pregnancy/your-pregnancy-care/your-antenatal-care-and-appointments/",
+    "who_contraception": "https://www.who.int/news-room/fact-sheets/detail/family-planning-contraception",
+    "vlk_screening": "https://ligoniukasa.lrv.lt/lt/veiklos-sritys/informacija-gyventojams/ligu-prevencijos-programos/gimdos-kaklelio-vezio-prevencija/",
+    "nhs_colposcopy": "https://www.nhs.uk/tests-and-treatments/colposcopy/"
+  },
+  "pages": [
+    {
+      "path": "/ginekologo-konsultacija-vilniuje/",
+      "status": "reviewed_and_revised",
+      "clinic_service_ids": [
+        "price-01",
+        "price-09"
+      ],
+      "sources": [
+        "uneja",
+        "hila_gyn"
+      ],
+      "body_word_count": 213,
+      "findings": [
+        "Konsultacijų temos atitinka gydytojos sąrašą; nevaisingumo konsultacija neprilyginama pagalbiniam apvaisinimui.",
+        "Sutrumpintas pasikartojantis pokalbio aprašymas; menopauzės temos nusakytos švelniau.",
+        "Patikrinti abu DUK, registracija, pasiruošimas, metaduomenys; nepriskirtos visoms pacientėms privalomos apžiūros ar echoskopija."
+      ]
+    },
+    {
+      "path": "/ginekologine-echoskopija-vilniuje/",
+      "status": "reviewed_and_revised",
+      "clinic_service_ids": [
+        "price-05",
+        "price-06"
+      ],
+      "sources": [
+        "nhs_ultrasound",
+        "hila_tests"
+      ],
+      "body_word_count": 234,
+      "findings": [
+        "Abu tyrimo būdai patvirtinti kainoraštyje; garso bangų, daviklio ir pasiruošimo aprašymas dera su NHS.",
+        "Paliktas individualus pasiruošimas; pridėta galimybė paprašyti sustabdyti tyrimą.",
+        "Rezultatų interpretavimas neprilyginamas visų ligų atmetimui; DUK ir metaduomenys patikrinti."
+      ]
+    },
+    {
+      "path": "/nestumo-prieziura-vilniuje/",
+      "status": "reviewed_and_revised",
+      "clinic_service_ids": [
+        "price-14",
+        "price-15",
+        "price-16"
+      ],
+      "sources": [
+        "nhs_pregnancy",
+        "uneja"
+      ],
+      "body_word_count": 218,
+      "findings": [
+        "Apžiūra, matavimai, širdies tonų klausymas priežiūros metu ir transabdominalinė echoskopija patvirtinti gydytojos lape.",
+        "Pridėta sąlyga dėl nėštumo laiko ir vizito poreikio, kad neatrodytų, jog viskas atliekama kiekvieno vizito metu.",
+        "NHS naudojamas bendram priežiūros principui; Jungtinės Karalystės vizitų grafikas ir finansavimas neperkelti.",
+        "Patikrinti DUK ir metaduomenys; neišgalvota genetinių tyrimų, visapusiškos rizikingo nėštumo priežiūros ar vieno kainos paketo."
+      ]
+    },
+    {
+      "path": "/kontracepcijos-parinkimas/",
+      "status": "reviewed_and_revised",
+      "clinic_service_ids": [
+        "price-09",
+        "price-10",
+        "price-11"
+      ],
+      "sources": [
+        "who_contraception",
+        "hila_iud"
+      ],
+      "body_word_count": 227,
+      "findings": [
+        "Individualus metodų pasirinkimas ir prezervatyvų vaidmuo atitinka PSO; aiškiai nurodyta, kad spiralė neapsaugo nuo LPI.",
+        "Spiralės įvedimas, pašalinimas ir kaina be priemonės patvirtinti klinikos lape.",
+        "Pašalintas palyginimas su drauge, pataisyta gramatika; patikrinti DUK ir pasiruošimas.",
+        "Neperkelti Hila nuskausminimas, trukmė, procedūros dienos ar kontraindikacijų sąrašas."
+      ]
+    },
+    {
+      "path": "/profilaktinis-ginekologinis-patikrinimas/",
+      "status": "reviewed_and_revised",
+      "clinic_service_ids": [
+        "price-01"
+      ],
+      "sources": [
+        "vlk_screening",
+        "hila_tests"
+      ],
+      "body_word_count": 252,
+      "findings": [
+        "Atskirta profilaktika, echoskopija ir gimdos kaklelio prevenciniai tyrimai.",
+        "Pridėtas trumpas citologinio ir aukštos rizikos ŽPV tyrimų paaiškinimas pagal VLK; individualų pasirinkimą lemia amžius ir rezultatai.",
+        "Nepaskelbta, kad klinika vykdo kompensuojamą programą; dalyvavimui nurodytas šeimos gydytojas.",
+        "Krūties prevencija minima tik kaip pokalbio tema, ne mamografijos ar krūtų echoskopijos paslauga.",
+        "Patikrinti DUK, metaduomenys ir registracija; nenustatytas visoms vienodas tikrinimosi dažnumas."
+      ]
+    },
+    {
+      "path": "/paslaugos/",
+      "status": "reviewed_and_revised",
+      "sources": [
+        "hila_tests",
+        "nhs_colposcopy"
+      ],
+      "additional_services": [
+        {
+          "service": "Kolposkopija",
+          "clinic_service_ids": [
+            "price-07"
+          ],
+          "finding": "Optinė gimdos kaklelio apžiūra aprašyta tiksliai; nevadinama echoskopija ar savaime biopsija."
+        },
+        {
+          "service": "Elektrochirurginis gydymas",
+          "clinic_service_ids": [
+            "price-03"
+          ],
+          "finding": "Paslauga patvirtinta; pasirenkama įvertinus pakitimus ir tyrimus. Nepriskirta konkreti LEEP, konizacijos ar kita technika."
+        },
+        {
+          "service": "Laboratoriniai tyrimai",
+          "clinic_service_ids": [
+            "laboratory_services"
+          ],
+          "finding": "Visos 5 kategorijos atitinka lapą; mėginių paėmimas neprilyginamas laboratorijai vietoje. Tyrimų poreikis atskirtas nuo registracijos."
+        }
+      ],
+      "findings": [
+        "Katalogo santraukos suderintos su detaliais puslapiais.",
+        "Visos 11 aktyvių kainoraščio eilučių ir laboratoriniai tyrimai aprėpti; išbrauktos paslaugos nesiūlomos."
+      ]
+    }
+  ],
+  "limits": [
+    "Kitų įstaigų informacija nepatvirtina šios klinikos darbo tvarkos.",
+    "Nepriskiriamas gydytojos patvirtinimas sukurtiems tekstams; tai redakcinė šaltinių patikra.",
+    "Elektrochirurginio gydymo konkretus metodas, laboratorinių tyrimų sąrašas ir paruošimo detalės iš pateikto lapo nenustatomi; svetainėje palikta bendro pobūdžio informacija."
+  ],
+  "verification": {
+    "static_site_check": "PASS: 9 pages",
+    "responsive_check": "All 6 service routes fit 390px viewport; no horizontal overflow",
+    "visual_review": "Desktop ultrasound page and mobile preventive check page reviewed",
+    "result": "Editorial and source consistency checks complete; not clinician sign-off"
+  }
+}
