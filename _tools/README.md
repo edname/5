@@ -23,3 +23,9 @@ Before publishing, run the checks, review the pages at desktop and mobile widths
 `page_body()` generatoriuje parenka išdėstymą pagal puslapio paskirtį. Esamas tekstas skaidomas pagal H2 antraštes; keičiant jų skaičių ar tvarką reikia atnaujinti atitinkamą kompoziciją. Klinikos įėjimo nuotrauka rodoma tik kontaktų puslapyje. Paslaugų puslapiuose bendrą registracijos šoninę skiltį pakeičia konkrečiai temai skirti informaciniai blokai ir apatinė paslaugų navigacija.
 
 Registracija sujungta su `/kontaktai/`. `/registracija/` paliktas kaip statinis nukreipimas su canonical į kontaktus ir `noindex`; sitemap jo neįtraukia. Meniu ir vidinės registracijos nuorodos veda tiesiai į kontaktus.
+
+## Gautas paslaugų kainoraštis
+
+2026-10-06 gauto klinikos kainoraščio nuotrauka išsaugota `sources/paslaugu-kainorastis-gautas-2026-10-06.jpg`, o perrašytos paslaugos ir kainos – `clinic-price-list.json`. Jame yra 19 įkainotų eilučių ir atskira pastaba apie laboratorinius tyrimus pagal laboratorijų įkainius. Nuotrauka yra pirminis šaltinis; JSON įrašai išlaiko kainų intervalus, akušerijos ir ginekologijos skirstymą bei spiralės įvedimo kainos išimtį.
+
+Tai projekto medžiaga, automatiškai į viešus puslapius neįtraukiama. Kainoraščio data ir galiojimo pradžia lape nenurodytos; gavimo data jų neatstoja. Prieš skelbiant kainas patikslinti jų aktualumą. Apžiūros kainos nevadinti konsultacijos kaina, nes lape tai skirtingos eilutės; skirtingų paslaugų nesujungti į numanomus vizito paketus. Telefonas šaltinyje užrašytas senu formatu; svetainėje išlieka dabartinis `+370 5 230 2235`.

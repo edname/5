@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "language": "lt",
+  "currency": "EUR",
+  "source": {
+    "type": "user_supplied_clinic_price_list_photo",
+    "file": "_tools/sources/paslaugu-kainorastis-gautas-2026-10-06.jpg",
+    "received_on": "2026-10-06",
+    "document_date": null,
+    "valid_from": null,
+    "sha256": "8613d2ec8e3ab52abfbe92e047a61b4c5c360881ea63cd69fbb142d80a1bd6ab",
+    "heading": "Ginekologijos kabinetas",
+    "address_as_printed": "Vilnius, Gedvydžių g. 25",
+    "telephone_as_printed": "852302235"
+  },
+  "status": "transcribed_from_photo_not_published_on_website",
+  "notes": [
+    "Gavimo data nėra kainoraščio įsigaliojimo data; data lape nematoma.",
+    "Išlaikyti lape nurodyti paslaugų pavadinimai ir kainų intervalai; tipografiniai tarpai ir eilučių laužymas suvienodinti.",
+    "Ginekologinė ir akušerinė transabdominalinė echoskopija lape turi skirtingas kainas, todėl įrašai nesujungti.",
+    "Intervalų priežastys, paslaugų komplektavimas ir galimi papildomi mokesčiai lape nepaaiškinti. Nelaikyti atskirų eilučių vieno vizito paketu.",
+    "Ankstyvo nėštumo nustatymas testu ir konsultacija yra atskiros kainoraščio eilutės.",
+    "Prieš viešai pateikiant kainas pasitikslinti, ar šis kainoraštis tebegalioja."
+  ],
+  "categories": {
+    "ginekologija": "Ginekologijos paslaugų kainos",
+    "akuserija": "Akušerijos paslaugų kainos",
+    "dokumentai": "Dokumentai"
+  },
+  "laboratory_services": {
+    "description": "Imami virusologiniai, bakteriologiniai, biocheminiai, klinikiniai, histologiniai tyrimai",
+    "pricing_note": "Kainos pagal laboratorijų įkainius.",
+    "price_eur": null
+  },
+  "services": [
+    {
+      "id": "price-01",
+      "category": "ginekologija",
+      "name": "Ginekologinė apžiūra",
+      "price_eur": {
+        "min": 60,
+        "max": 60
+      },
+      "note": null
+    },
+    {
+      "id": "price-02",
+      "category": "ginekologija",
+      "name": "Gydomosios vonelės",
+      "price_eur": {
+        "min": 20,
+        "max": 30
+      },
+      "note": null
+    },
+    {
+      "id": "price-03",
+      "category": "ginekologija",
+      "name": "Gimdos kaklelio patologijos elektro-chirurginis gydymas",
+      "price_eur": {
+        "min": 150,
+        "max": 150
+      },
+      "note": null
+    },
+    {
+      "id": "price-04",
+      "category": "ginekologija",
+      "name": "Probatorinė abrazija",
+      "price_eur": {
+        "min": 150,
+        "max": 150
+      },
+      "note": null
+    },
+    {
+      "id": "price-05",
+      "category": "ginekologija",
+      "name": "Ginekologinio susirgimo ultragarsinė diagnostika (echoskopija): transabdominalinė",
+      "price_eur": {
+        "min": 70,
+        "max": 70
+      },
+      "note": null
+    },
+    {
+      "id": "price-06",
+      "category": "ginekologija",
+      "name": "Ginekologinio susirgimo ultragarsinė diagnostika (echoskopija): transvaginalinė",
+      "price_eur": {
+        "min": 80,
+        "max": 80
+      },
+      "note": null
+    },
+    {
+      "id": "price-07",
+      "category": "ginekologija",
+      "name": "Kolposkopija",
+      "price_eur": {
+        "min": 50,
+        "max": 60
+      },
+      "note": null
+    },
+    {
+      "id": "price-08",
+      "category": "ginekologija",
+      "name": "Ankstyvo nėštumo diagnostika (nustatymas testu)",
+      "price_eur": {
+        "min": 5,
+        "max": 5
+      },
+      "note": null
+    },
+    {
+      "id": "price-09",
+      "category": "ginekologija",
+      "name": "Konsultacija dėl kontracepcijos, nevaisingumo, klimakterinio laikotarpio susirgimų",
+      "price_eur": {
+        "min": 40,
+        "max": 60
+      },
+      "note": null
+    },
+    {
+      "id": "price-10",
+      "category": "ginekologija",
+      "name": "Kontracepcinės spiralės įvedimas",
+      "price_eur": {
+        "min": 80,
+        "max": 80
+      },
+      "note": "Kaina be spiralės."
+    },
+    {
+      "id": "price-11",
+      "category": "ginekologija",
+      "name": "Kontracepcinės spiralės pašalinimas",
+      "price_eur": {
+        "min": 60,
+        "max": 60
+      },
+      "note": null
+    },
+    {
+      "id": "price-12",
+      "category": "ginekologija",
+      "name": "Lašelinė",
+      "price_eur": {
+        "min": 30,
+        "max": 30
+      },
+      "note": null
+    },
+    {
+      "id": "price-13",
+      "category": "ginekologija",
+      "name": "Injekcija į raumenis, veną",
+      "price_eur": {
+        "min": 2,
+        "max": 10
+      },
+      "note": null
+    },
+    {
+      "id": "price-14",
+      "category": "akuserija",
+      "name": "Nėščiosios ginekologinė apžiūra",
+      "price_eur": {
+        "min": 60,
+        "max": 60
+      },
+      "note": null
+    },
+    {
+      "id": "price-15",
+      "category": "akuserija",
+      "name": "Nėščiosios priežiūra (matavimas, vaisiaus širdies tonų klausymas)",
+      "price_eur": {
+        "min": 30,
+        "max": 50
+      },
+      "note": null
+    },
+    {
+      "id": "price-16",
+      "category": "akuserija",
+      "name": "Ultragarsinė diagnostika (echoskopija): transabdominalinė",
+      "price_eur": {
+        "min": 60,
+        "max": 70
+      },
+      "note": null
+    },
+    {
+      "id": "price-17",
+      "category": "akuserija",
+      "name": "Laktostazės likvidavimas",
+      "price_eur": {
+        "min": 30,
+        "max": 30
+      },
+      "note": null
+    },
+    {
+      "id": "price-18",
+      "category": "akuserija",
+      "name": "Vaisiaus širdies tonai",
+      "price_eur": {
+        "min": 10,
+        "max": 10
+      },
+      "note": null
+    },
+    {
+      "id": "price-19",
+      "category": "dokumentai",
+      "name": "Pažymos, išrašai, receptai",
+      "price_eur": {
+        "min": 5,
+        "max": 20
+      },
+      "note": null
+    }
+  ]
+}
