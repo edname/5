@@ -16,18 +16,20 @@
     "ginekologinė echoskopija Vilniuje",
     "nėštumo priežiūra Vilniuje klinika",
     "kontracepcijos parinkimas ginekologas",
-    "profilaktinis ginekologinis patikrinimas Vilniuje klinika"
+    "profilaktinis ginekologinis patikrinimas Vilniuje klinika",
+    "privati ginekologė Vilniuje"
   ],
   "keyword_map": [
     {
       "url": "/",
-      "primary": "privatus ginekologas Vilniuje",
+      "primary": "privati ginekologė Vilniuje",
       "secondary": [
         "privati ginekologijos klinika Vilniuje",
         "ginekologinis kabinetas Vilniuje",
         "ginekologė Vilniuje",
         "akušerė ginekologė Vilniuje",
-        "G. Karpenko"
+        "G. Karpenko",
+        "privatus ginekologas Vilniuje"
       ],
       "priority": "high",
       "intent": "Find a local clinic and clinician",
@@ -206,5 +208,10 @@
       "url": "/kontaktai/",
       "purpose": "Kontaktai"
     }
-  ]
+  ],
+  "female_clinician_intent_update": {
+    "date": "2026-10-06",
+    "reason": "User highlighted searches for a female clinician. Wording reflects the actual doctor; search frequency not independently measured.",
+    "implementation": "Homepage title and description, visible physician introduction, consultation title/H1/description and navigation label. Existing URLs retained."
+  }
 }

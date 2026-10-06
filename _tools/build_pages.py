@@ -10,10 +10,10 @@ BASE = 'https://karpenko.lt'
 PAGES = [
     {
         'slug': 'ginekologo-konsultacija-vilniuje',
-        'label': 'Ginekologo konsultacija',
-        'title': 'Ginekologo konsultacija Vilniuje | G. Karpenko klinika',
-        'description': 'Privati gydytojos akušerės-ginekologės konsultacija Vilniuje: pokalbis, apžiūra ir individualus ištyrimas. G. Karpenko klinika, Gedvydžių g. 25.',
-        'heading': 'Ginekologo konsultacija Vilniuje',
+        'label': 'Ginekologės konsultacija',
+        'title': 'Ginekologės konsultacija Vilniuje | G. Karpenko klinika',
+        'description': 'Privati ginekologė G. Karpenko Vilniuje: konsultacija, apžiūra ir individualaus ištyrimo aptarimas. Gedvydžių g. 25. Registracija telefonu +370 5 230 2235.',
+        'heading': 'Ginekologės konsultacija Vilniuje',
         'lead': 'Laikas Jūsų klausimams, atidi apžiūra ir individualus dėmesys moters sveikatai.',
         'content': '''
             <p>Privačioje klinikoje Jus priima gydytoja akušerė-ginekologė G. Karpenko. Per konsultaciją galite ramiai aptarti savo sveikatą, pasitikrinti ar pasikalbėti apie atsiradusius negalavimus. Privačia praktika gydytoja užsiima nuo 1997 metų, o pacientes priima Gedvydžių g. 25, Vilniuje.</p>
