@@ -1,0 +1,174 @@
+{
+  "checked_on": "2026-10-06",
+  "scope": "Exploratory comparison of five private Vilnius clinic public tariffs, not a statistically representative market survey.",
+  "currency": "EUR",
+  "own_prices": {
+    "Ginekologinė apžiūra": {
+      "min": 70,
+      "max": 70
+    },
+    "Gimdos kaklelio patologijos elektro-chirurginis gydymas": {
+      "min": 150,
+      "max": 150
+    },
+    "Ginekologinio susirgimo ultragarsinė diagnostika (echoskopija): transabdominalinė": {
+      "min": 70,
+      "max": 70
+    },
+    "Ginekologinio susirgimo ultragarsinė diagnostika (echoskopija): transvaginalinė": {
+      "min": 80,
+      "max": 80
+    },
+    "Kolposkopija": {
+      "min": 50,
+      "max": 60
+    },
+    "Konsultacija dėl kontracepcijos, nevaisingumo, klimakterinio laikotarpio susirgimų": {
+      "min": 40,
+      "max": 60
+    },
+    "Kontracepcinės spiralės įvedimas": {
+      "min": 80,
+      "max": 80
+    },
+    "Kontracepcinės spiralės pašalinimas": {
+      "min": 60,
+      "max": 60
+    },
+    "Nėščiosios ginekologinė apžiūra": {
+      "min": 70,
+      "max": 70
+    },
+    "Nėščiosios priežiūra (matavimas, vaisiaus širdies tonų klausymas)": {
+      "min": 30,
+      "max": 50
+    },
+    "Ultragarsinė diagnostika (echoskopija): transabdominalinė": {
+      "min": 60,
+      "max": 70
+    }
+  },
+  "sources": [
+    {
+      "id": "ms",
+      "clinic": "Mano šeimos klinika",
+      "url": "https://www.msklinika.lt/ginekologija",
+      "access": "opened_official_page",
+      "prices": {
+        "consultation": 65,
+        "pelvic_endo_ultrasound": 50,
+        "fetal_ultrasound_with_images": 70,
+        "colposcopy": 33,
+        "iud_insertion": 40,
+        "iud_removal": 30
+      },
+      "notes": [
+        "Echoskopijos įvardijimas skiriasi; procedūrų paketų ir spiralės kainos įtraukimas nenurodytas."
+      ]
+    },
+    {
+      "id": "pg",
+      "clinic": "PrivatusGinekologas.lt / V. Jonaitienės klinika",
+      "url": "https://privatusginekologas.lt/kainorastis/",
+      "access": "opened_official_page",
+      "prices": {
+        "standard_consultation": 80,
+        "named_doctor_consultation": 90,
+        "pelvic_ultrasound": 60,
+        "pelvic_ultrasound_third_level_specialist": 70,
+        "colposcopy": 75,
+        "iud_insertion": 100,
+        "iud_removal": 20,
+        "pregnancy_consultation_existing_patients": 80,
+        "early_pregnancy_ultrasound_until_11_weeks": 60,
+        "fetal_ultrasound_medical_doctor": 80,
+        "named_doctor_consultation_plus_ultrasound": 150
+      },
+      "notes": [
+        "Specialistų, nėštumo savaitės ir esamų pacienčių sąlygos skiriasi. Spiralės įtraukimas į įvedimo kainą nepaaiškintas."
+      ]
+    },
+    {
+      "id": "eg",
+      "clinic": "Eugenijos ginekologijos klinika",
+      "url": "https://ginekologas.lt/paslaugu-ikainiai/",
+      "access": "official_page_search_index_full_pricing_excerpt_direct_open_failed",
+      "prices": {
+        "standard_consultation": 70,
+        "transvaginal_ultrasound": 50,
+        "pregnancy_consultation": 55,
+        "pregnancy_ultrasound_from_16_weeks": 55,
+        "video_colposcopy": 70,
+        "iud_insertion": 80,
+        "uncomplicated_iud_removal": 60,
+        "cervical_radio_wave_treatment": 200,
+        "named_doctor_infertility_consultation": 120
+      },
+      "notes": [
+        "Gydytojos O. Gabrėnaitės-Kazlauskienės konsultacijoms taikomos atskiros kainos. Radiobangų gydymas nėra laikomas tapačiu mūsų elektrochirurginio gydymo įrašui."
+      ]
+    },
+    {
+      "id": "and",
+      "clinic": "AND klinika",
+      "url": "https://andklinika.lt/lt/paslaugos/gydytojai-specialistai/akuserija-ginekologija",
+      "access": "official_page_search_index_full_pricing_excerpt_direct_open_failed",
+      "prices": {
+        "standard_consultation": 70,
+        "consultation_plus_ultrasound": 120,
+        "transvaginal_ultrasound": 60,
+        "transabdominal_ultrasound": 60,
+        "colposcopy": 80,
+        "iud_insertion_excluding_device": 80,
+        "iud_removal": 70,
+        "single_fetus_ultrasound_without_consultation": 90,
+        "per_visit_care_fee": 5
+      },
+      "notes": [
+        "Kainoraštyje skelbiamas papildomas 5 Eur kiekvieno vizito priežiūros mokestis. Lentelės eilutės nereiškia galutinės sąskaitos. Kitoje svetainės versijoje yra pranešimas apie rugsėjo 1 d. kainų pakeitimus, todėl aktualumą ypač verta pasitikslinti."
+      ]
+    },
+    {
+      "id": "priv",
+      "clinic": "Privatus gydytojas",
+      "url": "https://privatus-gydytojas.lt/ginekologo-paslaugos/",
+      "access": "official_page_search_index_pricing_excerpt_direct_open_failed",
+      "prices": {
+        "initial_consultation": 80,
+        "iud_insertion": 30,
+        "iud_removal": 30
+      },
+      "notes": [
+        "Neaišku, ar papildomai privaloma konsultacija ir kas įeina į procedūros kainą."
+      ]
+    }
+  ],
+  "excluded_sources": [
+    {
+      "clinic": "HSI",
+      "url": "https://www.hsiklinika.lt/ginekologijos-paslaugu-kainos/",
+      "reason": "Puslapis turi seną pranešimą apie kainų keitimą nuo 2022-01-01; neįtrauktas į pagrindinį palyginimą dėl aktualumo neaiškumo."
+    }
+  ],
+  "findings": [
+    "Mūsų tikslinė konsultacija 40–60 Eur nominaliai mažesnė už atrinktų klinikų bendrosios pirminės konsultacijos 65–80 Eur kainas, bet konsultacijų apimtis nėra patvirtintai vienoda.",
+    "Mūsų apžiūra 70 Eur yra atskira eilutė; negalima jos automatiškai laikyti konsultacija ar skaičiuoti tariamo paketo.",
+    "Mūsų transvaginalinė echoskopija 80 Eur yra 30 Eur (60%) brangesnė už Eugenijos klinikos 50 Eur ir 20 Eur (33,3%) už AND 60 Eur bazinį tarifą. AND dar nurodo 5 Eur vizito mokestį.",
+    "Mūsų transabdominalinė echoskopija 70 Eur yra 10 Eur aukščiau AND 60 Eur bazinio tarifo; imtis per maža bendram rinkos įvertinimui.",
+    "Mūsų kolposkopija 50–60 Eur yra mažesnė už 70–80 Eur trijų atrinktų klinikų tarifus, tačiau didesnė už Mano šeimos klinikos 33 Eur. Eugenijos klinikoje nurodyta video kolposkopija.",
+    "Mūsų spiralės įvedimas 80 Eur sutampa su Eugenijos ir AND baziniais tarifais. Kitose atrinktose klinikose skelbiama 30, 40 ir 100 Eur; sudėtis ne visur paaiškinta.",
+    "Mūsų spiralės pašalinimas 60 Eur sutampa su Eugenijos klinikos nekomplikuotu pašalinimu, yra 30–40 Eur aukščiau trijų mažesnių tarifų (20–30 Eur), 10 Eur žemiau AND bazinio tarifo.",
+    "Mūsų akušerinė transabdominalinė echoskopija 60–70 Eur patenka į stebėtų susijusių nėštumo ultragarsinių tyrimų 55–90 Eur ribas, bet nėštumo savaitės, tyrimo tikslai ir apimtis skiriasi.",
+    "Nėščiosios apžiūrai 70 Eur ir priežiūrai 30–50 Eur nerastas tiksliai sutampantis paketas; nėščiųjų konsultacijų kainos tik kontekstinės.",
+    "Elektrochirurginiam gydymui 150 Eur nerastas pakankamai tikslus analogas. Radiobangų gydymo ar LLETZ kainos nėra tiesioginiai atitikmenys.",
+    "Laboratorinių tyrimų kainų lyginti negalima, kol nėra konkrečių tyrimų ir mūsų laboratorijos įkainių."
+  ],
+  "methodology": [
+    "Naudotos viešos oficialių klinikų kainos arba jų paieškos sistemos indeksuotas turinys; prieiga pažymėta kiekvienam šaltiniui.",
+    "Patikros data nėra kainų įsigaliojimo data; telefonu aktualumas ir paslaugų sudėtis netikrinti.",
+    "Nesumuotos konsultacijos, apžiūros ir tyrimai į nepatvirtintus paketus. Nevertinti PSDF kompensuojami tarifai ar akcijos.",
+    "Neišvestas vienas rinkos vidurkis dėl skirtingų procedūrų, gydytojų ir paketų."
+  ],
+  "conclusion": "Kainų profilis mišrus: konsultacijų tarifas žemas, kolposkopija konkurencinga, spiralės įvedimas sutampa su dalimi kitų klinikų, transvaginalinė echoskopija ir spiralės pašalinimas turi pigesnių alternatyvų. Negalima pagrįsti bendro teiginio, kad visos paslaugos pigesnės.",
+  "next_step": "Prieš priimant kainodaros sprendimus patikslinti, kas įskaičiuota į mūsų apžiūrą, konsultaciją ir procedūras, ir patvirtinti pasirinktų konkurentų galutinę vizito kainą."
+}
