@@ -13,7 +13,7 @@
     "address_as_printed": "Vilnius, Gedvydžių g. 25",
     "telephone_as_printed": "852302235"
   },
-  "status": "corrected_source_transcribed_pregnancy_exam_price_pending_confirmation",
+  "status": "corrected_source_transcribed_handwritten_prices_confirmed_by_user",
   "notes": [
     "Gavimo data nėra kainoraščio įsigaliojimo data; data lape nematoma.",
     "Išlaikyti lape nurodyti paslaugų pavadinimai ir kainų intervalai; tipografiniai tarpai ir eilučių laužymas suvienodinti.",
@@ -24,7 +24,7 @@
     "Šis pataisytas lapas pakeičia ankstesnį sąrašą; išbrauktos paslaugos saugomos tik istorijai ir negali būti laikomos teikiamomis.",
     "Atskira paslauga „Vaisiaus širdies tonai“ išbraukta, tačiau tonų klausymas nėščiosios priežiūros eilutėje paliktas.",
     "Išbrauktas nėštumo nustatymas testu; tai savaime nereiškia, kad nebeatliekama nėštumo diagnostika kitais būdais.",
-    "Ginekologinės apžiūros kaina patvirtinta vartotojo: 70 Eur. Nėščiosios apžiūros kaina tebėra tentative_price_eur; jos price_eur paliktas null iki patvirtinimo."
+    "Vartotojas 2026-10-06 patvirtino abi ranka pakeistas kainas: ginekologinė apžiūra ir nėščiosios ginekologinė apžiūra kainuoja po 70 Eur."
   ],
   "categories": {
     "ginekologija": "Ginekologijos paslaugų kainos",
@@ -207,13 +207,13 @@
         "min": 60,
         "max": 60
       },
-      "price_eur": null,
-      "tentative_price_eur": {
+      "price_eur": {
         "min": 70,
         "max": 70
       },
-      "price_confirmation": "pending_user_confirmation",
-      "correction_note": "Ranka pataisytą skaičių perskaitome kaip 70 Eur; galutinė kaina dar nepatvirtinta."
+      "price_confirmation": "confirmed_by_user",
+      "correction_note": "Vartotojas 2026-10-06 patvirtino: nėščiosios ginekologinė apžiūra dabar kainuoja 70 Eur.",
+      "price_confirmed_on": "2026-10-06"
     },
     {
       "id": "price-15",
