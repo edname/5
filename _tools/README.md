@@ -26,8 +26,12 @@ Registracija sujungta su `/kontaktai/`. `/registracija/` paliktas kaip statinis 
 
 ## Gautas paslaugų kainoraštis
 
-2026-10-06 gauto klinikos kainoraščio nuotrauka išsaugota `sources/paslaugu-kainorastis-gautas-2026-10-06.jpg`, o perrašytos paslaugos ir kainos – `clinic-price-list.json`. Jame yra 19 įkainotų eilučių ir atskira pastaba apie laboratorinius tyrimus pagal laboratorijų įkainius. Nuotrauka yra pirminis šaltinis; JSON įrašai išlaiko kainų intervalus, akušerijos ir ginekologijos skirstymą bei spiralės įvedimo kainos išimtį.
+2026-10-06 gauto klinikos kainoraščio nuotrauka išsaugota `sources/paslaugu-kainorastis-gautas-2026-10-06.jpg`, o perrašytos paslaugos ir kainos – `clinic-price-list.json`. Pradiniame lape buvo 19 įkainotų eilučių ir atskira laboratorinių tyrimų pastaba. Dabartinis JSON atnaujintas pagal gydytojos pataisytą lapą: 11 paliktų ir 8 nebeatliekamos paslaugos; dvi ranka pakeistos kainos laukia patvirtinimo. Nuotrauka yra pirminis šaltinis; JSON įrašai išlaiko kainų intervalus, akušerijos ir ginekologijos skirstymą bei spiralės įvedimo kainos išimtį.
 
 Tai projekto medžiaga, automatiškai į viešus puslapius neįtraukiama. Kainoraščio data ir galiojimo pradžia lape nenurodytos; gavimo data jų neatstoja. Prieš skelbiant kainas patikslinti jų aktualumą. Apžiūros kainos nevadinti konsultacijos kaina, nes lape tai skirtingos eilutės; skirtingų paslaugų nesujungti į numanomus vizito paketus. Telefonas šaltinyje užrašytas senu formatu; svetainėje išlieka dabartinis `+370 5 230 2235`.
 
 2026-10-06 palyginimas su esamu svetainės turiniu išsaugotas `service-coverage-audit.json`: kiekvienai kainoraščio eilutei pateikta aprėptis, teksto įrodymas arba trūkumas ir siūloma vieta svetainėje. Tai turinio palyginimas, ne naujų viešų tekstų publikacija.
+
+### Gydytojos pataisymai
+
+Vadovautis `sources/paslaugu-kainorastis-patikslintas-2026-10-06.jpg`. Pradinis JSON ir pradinis auditas išsaugoti `sources/*-before-corrections-2026-10-06.json` tik istorijai. Laukas `availability: discontinued` reiškia, kad paslaugos nebesiūlomos; jų senos kainos saugomos tik `previous_price_eur`. Apžiūrų kainos preliminariai perskaitytos kaip 70 Eur, bet kol nepatvirtinta, `price_eur` yra null. Neprilyginti išbrauktos atskiros vaisiaus širdies tonų paslaugos visai nėštumo priežiūrai: tonų klausymas jos sudėtyje liko neišbrauktas. Nėštumo nustatymas testu išbrauktas; kitų diagnostikos būdų prieinamumo iš šio išbraukimo nenustatome.

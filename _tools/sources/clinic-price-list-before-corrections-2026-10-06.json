@@ -1,30 +1,26 @@
 {
-  "schema_version": 2,
+  "schema_version": 1,
   "language": "lt",
   "currency": "EUR",
   "source": {
-    "type": "user_supplied_doctor_annotated_clinic_price_list_photo",
-    "file": "_tools/sources/paslaugu-kainorastis-patikslintas-2026-10-06.jpg",
+    "type": "user_supplied_clinic_price_list_photo",
+    "file": "_tools/sources/paslaugu-kainorastis-gautas-2026-10-06.jpg",
     "received_on": "2026-10-06",
     "document_date": null,
     "valid_from": null,
-    "sha256": "fa3e284d66fb7ffe27c146a8fbd5abc939896796c2619be2294cee00ecd41611",
+    "sha256": "8613d2ec8e3ab52abfbe92e047a61b4c5c360881ea63cd69fbb142d80a1bd6ab",
     "heading": "Ginekologijos kabinetas",
     "address_as_printed": "Vilnius, Gedvydžių g. 25",
     "telephone_as_printed": "852302235"
   },
-  "status": "corrected_source_transcribed_two_handwritten_prices_pending_confirmation",
+  "status": "transcribed_from_photo_not_published_on_website",
   "notes": [
     "Gavimo data nėra kainoraščio įsigaliojimo data; data lape nematoma.",
     "Išlaikyti lape nurodyti paslaugų pavadinimai ir kainų intervalai; tipografiniai tarpai ir eilučių laužymas suvienodinti.",
     "Ginekologinė ir akušerinė transabdominalinė echoskopija lape turi skirtingas kainas, todėl įrašai nesujungti.",
     "Intervalų priežastys, paslaugų komplektavimas ir galimi papildomi mokesčiai lape nepaaiškinti. Nelaikyti atskirų eilučių vieno vizito paketu.",
     "Ankstyvo nėštumo nustatymas testu ir konsultacija yra atskiros kainoraščio eilutės.",
-    "Prieš viešai pateikiant kainas pasitikslinti, ar šis kainoraštis tebegalioja.",
-    "Šis pataisytas lapas pakeičia ankstesnį sąrašą; išbrauktos paslaugos saugomos tik istorijai ir negali būti laikomos teikiamomis.",
-    "Atskira paslauga „Vaisiaus širdies tonai“ išbraukta, tačiau tonų klausymas nėščiosios priežiūros eilutėje paliktas.",
-    "Išbrauktas nėštumo nustatymas testu; tai savaime nereiškia, kad nebeatliekama nėštumo diagnostika kitais būdais.",
-    "Abi ranka pakeistos apžiūrų kainos laikinai nurodytos tentative_price_eur; price_eur paliktas null iki patvirtinimo."
+    "Prieš viešai pateikiant kainas pasitikslinti, ar šis kainoraštis tebegalioja."
   ],
   "categories": {
     "ginekologija": "Ginekologijos paslaugų kainos",
@@ -41,32 +37,21 @@
       "id": "price-01",
       "category": "ginekologija",
       "name": "Ginekologinė apžiūra",
-      "note": null,
-      "availability": "listed_in_corrected_source",
-      "previous_price_eur": {
+      "price_eur": {
         "min": 60,
         "max": 60
       },
-      "price_eur": null,
-      "tentative_price_eur": {
-        "min": 70,
-        "max": 70
-      },
-      "price_confirmation": "pending_user_confirmation",
-      "correction_note": "Ranka pataisytą skaičių perskaitome kaip 70 Eur; galutinė kaina dar nepatvirtinta."
+      "note": null
     },
     {
       "id": "price-02",
       "category": "ginekologija",
       "name": "Gydomosios vonelės",
-      "note": null,
-      "availability": "discontinued",
-      "previous_price_eur": {
+      "price_eur": {
         "min": 20,
         "max": 30
       },
-      "price_eur": null,
-      "correction_note": "Paslaugos pavadinimas ir kaina išbraukti; pagal vartotojo paaiškinimą paslauga nebeatliekama."
+      "note": null
     },
     {
       "id": "price-03",
@@ -76,21 +61,17 @@
         "min": 150,
         "max": 150
       },
-      "note": null,
-      "availability": "listed_in_corrected_source"
+      "note": null
     },
     {
       "id": "price-04",
       "category": "ginekologija",
       "name": "Probatorinė abrazija",
-      "note": null,
-      "availability": "discontinued",
-      "previous_price_eur": {
+      "price_eur": {
         "min": 150,
         "max": 150
       },
-      "price_eur": null,
-      "correction_note": "Paslaugos pavadinimas ir kaina išbraukti; pagal vartotojo paaiškinimą paslauga nebeatliekama."
+      "note": null
     },
     {
       "id": "price-05",
@@ -100,8 +81,7 @@
         "min": 70,
         "max": 70
       },
-      "note": null,
-      "availability": "listed_in_corrected_source"
+      "note": null
     },
     {
       "id": "price-06",
@@ -111,8 +91,7 @@
         "min": 80,
         "max": 80
       },
-      "note": null,
-      "availability": "listed_in_corrected_source"
+      "note": null
     },
     {
       "id": "price-07",
@@ -122,21 +101,17 @@
         "min": 50,
         "max": 60
       },
-      "note": null,
-      "availability": "listed_in_corrected_source"
+      "note": null
     },
     {
       "id": "price-08",
       "category": "ginekologija",
       "name": "Ankstyvo nėštumo diagnostika (nustatymas testu)",
-      "note": null,
-      "availability": "discontinued",
-      "previous_price_eur": {
+      "price_eur": {
         "min": 5,
         "max": 5
       },
-      "price_eur": null,
-      "correction_note": "Paslaugos pavadinimas ir kaina išbraukti; pagal vartotojo paaiškinimą paslauga nebeatliekama."
+      "note": null
     },
     {
       "id": "price-09",
@@ -146,8 +121,7 @@
         "min": 40,
         "max": 60
       },
-      "note": null,
-      "availability": "listed_in_corrected_source"
+      "note": null
     },
     {
       "id": "price-10",
@@ -157,8 +131,7 @@
         "min": 80,
         "max": 80
       },
-      "note": "Kaina be spiralės.",
-      "availability": "listed_in_corrected_source"
+      "note": "Kaina be spiralės."
     },
     {
       "id": "price-11",
@@ -168,52 +141,37 @@
         "min": 60,
         "max": 60
       },
-      "note": null,
-      "availability": "listed_in_corrected_source"
+      "note": null
     },
     {
       "id": "price-12",
       "category": "ginekologija",
       "name": "Lašelinė",
-      "note": null,
-      "availability": "discontinued",
-      "previous_price_eur": {
+      "price_eur": {
         "min": 30,
         "max": 30
       },
-      "price_eur": null,
-      "correction_note": "Paslaugos pavadinimas ir kaina išbraukti; pagal vartotojo paaiškinimą paslauga nebeatliekama."
+      "note": null
     },
     {
       "id": "price-13",
       "category": "ginekologija",
       "name": "Injekcija į raumenis, veną",
-      "note": null,
-      "availability": "discontinued",
-      "previous_price_eur": {
+      "price_eur": {
         "min": 2,
         "max": 10
       },
-      "price_eur": null,
-      "correction_note": "Paslaugos pavadinimas ir kaina išbraukti; pagal vartotojo paaiškinimą paslauga nebeatliekama."
+      "note": null
     },
     {
       "id": "price-14",
       "category": "akuserija",
       "name": "Nėščiosios ginekologinė apžiūra",
-      "note": null,
-      "availability": "listed_in_corrected_source",
-      "previous_price_eur": {
+      "price_eur": {
         "min": 60,
         "max": 60
       },
-      "price_eur": null,
-      "tentative_price_eur": {
-        "min": 70,
-        "max": 70
-      },
-      "price_confirmation": "pending_user_confirmation",
-      "correction_note": "Ranka pataisytą skaičių perskaitome kaip 70 Eur; galutinė kaina dar nepatvirtinta."
+      "note": null
     },
     {
       "id": "price-15",
@@ -223,8 +181,7 @@
         "min": 30,
         "max": 50
       },
-      "note": null,
-      "availability": "listed_in_corrected_source"
+      "note": null
     },
     {
       "id": "price-16",
@@ -234,58 +191,37 @@
         "min": 60,
         "max": 70
       },
-      "note": null,
-      "availability": "listed_in_corrected_source"
+      "note": null
     },
     {
       "id": "price-17",
       "category": "akuserija",
       "name": "Laktostazės likvidavimas",
-      "note": null,
-      "availability": "discontinued",
-      "previous_price_eur": {
+      "price_eur": {
         "min": 30,
         "max": 30
       },
-      "price_eur": null,
-      "correction_note": "Paslaugos pavadinimas ir kaina išbraukti; pagal vartotojo paaiškinimą paslauga nebeatliekama."
+      "note": null
     },
     {
       "id": "price-18",
       "category": "akuserija",
       "name": "Vaisiaus širdies tonai",
-      "note": null,
-      "availability": "discontinued",
-      "previous_price_eur": {
+      "price_eur": {
         "min": 10,
         "max": 10
       },
-      "price_eur": null,
-      "correction_note": "Paslaugos pavadinimas ir kaina išbraukti; pagal vartotojo paaiškinimą paslauga nebeatliekama."
+      "note": null
     },
     {
       "id": "price-19",
       "category": "dokumentai",
       "name": "Pažymos, išrašai, receptai",
-      "note": null,
-      "availability": "discontinued",
-      "previous_price_eur": {
+      "price_eur": {
         "min": 5,
         "max": 20
       },
-      "price_eur": null,
-      "correction_note": "Paslaugos pavadinimas ir kaina išbraukti; pagal vartotojo paaiškinimą paslauga nebeatliekama."
+      "note": null
     }
-  ],
-  "previous_source": {
-    "type": "user_supplied_clinic_price_list_photo",
-    "file": "_tools/sources/paslaugu-kainorastis-gautas-2026-10-06.jpg",
-    "received_on": "2026-10-06",
-    "document_date": null,
-    "valid_from": null,
-    "sha256": "8613d2ec8e3ab52abfbe92e047a61b4c5c360881ea63cd69fbb142d80a1bd6ab",
-    "heading": "Ginekologijos kabinetas",
-    "address_as_printed": "Vilnius, Gedvydžių g. 25",
-    "telephone_as_printed": "852302235"
-  }
+  ]
 }

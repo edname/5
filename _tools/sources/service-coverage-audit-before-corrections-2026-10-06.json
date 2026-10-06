@@ -8,9 +8,8 @@
   },
   "counts": {
     "explicit": 1,
-    "partial": 6,
-    "missing": 4,
-    "discontinued_do_not_add": 8
+    "partial": 8,
+    "missing": 10
   },
   "entries": [
     {
@@ -19,18 +18,15 @@
       "coverage": "explicit",
       "existing_or_proposed_page": "/ginekologo-konsultacija-vilniuje/",
       "evidence": "Individuali konsultacija, apžiūra, ginekologinių ligų diagnostika ir gydymas.",
-      "finding": "Apžiūra įvardyta paslaugų sąraše ir konsultacijos puslapyje.",
-      "availability": "listed_in_corrected_source"
+      "finding": "Apžiūra įvardyta paslaugų sąraše ir konsultacijos puslapyje."
     },
     {
       "price_id": "price-02",
       "name": "Gydomosios vonelės",
-      "coverage": "discontinued_do_not_add",
+      "coverage": "missing",
       "existing_or_proposed_page": "/ginekologo-konsultacija-vilniuje/",
       "evidence": null,
-      "finding": "Pataisytame kainoraštyje išbraukta; į svetainės paslaugų pasiūlą nepridėti.",
-      "availability": "discontinued",
-      "previous_coverage": "missing"
+      "finding": "Gydomosios vonelės neįvardytos."
     },
     {
       "price_id": "price-03",
@@ -38,18 +34,15 @@
       "coverage": "missing",
       "existing_or_proposed_page": "/ginekologo-konsultacija-vilniuje/",
       "evidence": null,
-      "finding": "Elektrochirurginis gimdos kaklelio patologijos gydymas neįvardytas; bendras ligų gydymo paminėjimas nėra konkrečios procedūros aprašymas.",
-      "availability": "listed_in_corrected_source"
+      "finding": "Elektrochirurginis gimdos kaklelio patologijos gydymas neįvardytas; bendras ligų gydymo paminėjimas nėra konkrečios procedūros aprašymas."
     },
     {
       "price_id": "price-04",
       "name": "Probatorinė abrazija",
-      "coverage": "discontinued_do_not_add",
+      "coverage": "missing",
       "existing_or_proposed_page": "/ginekologo-konsultacija-vilniuje/",
       "evidence": null,
-      "finding": "Pataisytame kainoraštyje išbraukta; į svetainės paslaugų pasiūlą nepridėti.",
-      "availability": "discontinued",
-      "previous_coverage": "missing"
+      "finding": "Probatorinė abrazija neįvardyta."
     },
     {
       "price_id": "price-05",
@@ -57,8 +50,7 @@
       "coverage": "partial",
       "existing_or_proposed_page": "/ginekologine-echoskopija-vilniuje/",
       "evidence": "Echoskopinius tyrimus klinikoje atlieka gydytoja akušerė-ginekologė G. Karpenko.",
-      "finding": "Echoskopija aprašyta, transabdominalinis būdas neįvardytas.",
-      "availability": "listed_in_corrected_source"
+      "finding": "Echoskopija aprašyta, transabdominalinis būdas neįvardytas."
     },
     {
       "price_id": "price-06",
@@ -66,8 +58,7 @@
       "coverage": "partial",
       "existing_or_proposed_page": "/ginekologine-echoskopija-vilniuje/",
       "evidence": "Pasiruošimas priklauso nuo numatomo ultragarsinio tyrimo būdo.",
-      "finding": "Transvaginalinis būdas neįvardytas.",
-      "availability": "listed_in_corrected_source"
+      "finding": "Transvaginalinis būdas neįvardytas."
     },
     {
       "price_id": "price-07",
@@ -75,18 +66,15 @@
       "coverage": "missing",
       "existing_or_proposed_page": "/ginekologo-konsultacija-vilniuje/",
       "evidence": null,
-      "finding": "Kolposkopija neįvardyta.",
-      "availability": "listed_in_corrected_source"
+      "finding": "Kolposkopija neįvardyta."
     },
     {
       "price_id": "price-08",
       "name": "Ankstyvo nėštumo diagnostika (nustatymas testu)",
-      "coverage": "discontinued_do_not_add",
+      "coverage": "partial",
       "existing_or_proposed_page": "/nestumo-prieziura-vilniuje/",
       "evidence": "Klinikoje atliekamas ankstyvas nėštumo nustatymas",
-      "finding": "Pataisytame kainoraštyje išbraukta; į svetainės paslaugų pasiūlą nepridėti.",
-      "availability": "discontinued",
-      "previous_coverage": "partial"
+      "finding": "Nėštumo nustatymas įvardytas, nustatymas testu neišskirtas."
     },
     {
       "price_id": "price-09",
@@ -94,8 +82,7 @@
       "coverage": "partial",
       "existing_or_proposed_page": "/kontracepcijos-parinkimas/",
       "evidence": "Dėl hormoninės ir nehormoninės kontracepcijos privačioje klinikoje Vilniuje konsultuoja gydytoja G. Karpenko.",
-      "finding": "Kontracepcijos konsultacija aprašyta; konsultacijų dėl nevaisingumo ir klimakterinio laikotarpio susirgimų nėra.",
-      "availability": "listed_in_corrected_source"
+      "finding": "Kontracepcijos konsultacija aprašyta; konsultacijų dėl nevaisingumo ir klimakterinio laikotarpio susirgimų nėra."
     },
     {
       "price_id": "price-10",
@@ -103,8 +90,7 @@
       "coverage": "missing",
       "existing_or_proposed_page": "/kontracepcijos-parinkimas/",
       "evidence": null,
-      "finding": "Spiralės įvedimas neįvardytas. Kainoraštyje kaina nurodyta be spiralės.",
-      "availability": "listed_in_corrected_source"
+      "finding": "Spiralės įvedimas neįvardytas. Kainoraštyje kaina nurodyta be spiralės."
     },
     {
       "price_id": "price-11",
@@ -112,28 +98,23 @@
       "coverage": "missing",
       "existing_or_proposed_page": "/kontracepcijos-parinkimas/",
       "evidence": null,
-      "finding": "Spiralės pašalinimas neįvardytas.",
-      "availability": "listed_in_corrected_source"
+      "finding": "Spiralės pašalinimas neįvardytas."
     },
     {
       "price_id": "price-12",
       "name": "Lašelinė",
-      "coverage": "discontinued_do_not_add",
+      "coverage": "missing",
       "existing_or_proposed_page": "/paslaugos/",
       "evidence": null,
-      "finding": "Pataisytame kainoraštyje išbraukta; į svetainės paslaugų pasiūlą nepridėti.",
-      "availability": "discontinued",
-      "previous_coverage": "missing"
+      "finding": "Lašelinė neįvardyta."
     },
     {
       "price_id": "price-13",
       "name": "Injekcija į raumenis, veną",
-      "coverage": "discontinued_do_not_add",
+      "coverage": "missing",
       "existing_or_proposed_page": "/paslaugos/",
       "evidence": null,
-      "finding": "Pataisytame kainoraštyje išbraukta; į svetainės paslaugų pasiūlą nepridėti.",
-      "availability": "discontinued",
-      "previous_coverage": "missing"
+      "finding": "Injekcijos į raumenis ir veną neįvardytos."
     },
     {
       "price_id": "price-14",
@@ -141,8 +122,7 @@
       "coverage": "partial",
       "existing_or_proposed_page": "/nestumo-prieziura-vilniuje/",
       "evidence": "Klinikos paslaugos apima nėščiųjų priežiūrą, vaisiaus stebėjimą ir tyrimus nėštumo metu.",
-      "finding": "Nėščiosios ginekologinė apžiūra atskirai neišskirta; apžiūra ir nėštumo priežiūra svetainėje minimos bendrai.",
-      "availability": "listed_in_corrected_source"
+      "finding": "Nėščiosios ginekologinė apžiūra atskirai neišskirta; apžiūra ir nėštumo priežiūra svetainėje minimos bendrai."
     },
     {
       "price_id": "price-15",
@@ -150,8 +130,7 @@
       "coverage": "partial",
       "existing_or_proposed_page": "/nestumo-prieziura-vilniuje/",
       "evidence": "Klinikos paslaugos apima nėščiųjų priežiūrą, vaisiaus stebėjimą ir tyrimus nėštumo metu.",
-      "finding": "Priežiūra aprašyta, matavimas ir vaisiaus širdies tonų klausymas neįvardyti.",
-      "availability": "listed_in_corrected_source"
+      "finding": "Priežiūra aprašyta, matavimas ir vaisiaus širdies tonų klausymas neįvardyti."
     },
     {
       "price_id": "price-16",
@@ -159,38 +138,31 @@
       "coverage": "partial",
       "existing_or_proposed_page": "/ginekologine-echoskopija-vilniuje/",
       "evidence": "Jeigu ieškote informacijos apie nėštumo nustatymą ar vaisiaus stebėjimą",
-      "finding": "Echoskopijos puslapis nukreipia į nėštumo priežiūrą; atskira akušerinė transabdominalinė echoskopija neįvardyta.",
-      "availability": "listed_in_corrected_source"
+      "finding": "Echoskopijos puslapis nukreipia į nėštumo priežiūrą; atskira akušerinė transabdominalinė echoskopija neįvardyta."
     },
     {
       "price_id": "price-17",
       "name": "Laktostazės likvidavimas",
-      "coverage": "discontinued_do_not_add",
+      "coverage": "missing",
       "existing_or_proposed_page": "/paslaugos/",
       "evidence": null,
-      "finding": "Pataisytame kainoraštyje išbraukta; į svetainės paslaugų pasiūlą nepridėti.",
-      "availability": "discontinued",
-      "previous_coverage": "missing"
+      "finding": "Laktostazės likvidavimas neįvardytas."
     },
     {
       "price_id": "price-18",
       "name": "Vaisiaus širdies tonai",
-      "coverage": "discontinued_do_not_add",
+      "coverage": "partial",
       "existing_or_proposed_page": "/nestumo-prieziura-vilniuje/",
       "evidence": "vaisiaus stebėjimą",
-      "finding": "Pataisytame kainoraštyje išbraukta; į svetainės paslaugų pasiūlą nepridėti.",
-      "availability": "discontinued",
-      "previous_coverage": "partial"
+      "finding": "Vaisiaus stebėjimas minimas bendrai; širdies tonai atskirai neįvardyti."
     },
     {
       "price_id": "price-19",
       "name": "Pažymos, išrašai, receptai",
-      "coverage": "discontinued_do_not_add",
+      "coverage": "missing",
       "existing_or_proposed_page": "/paslaugos/",
       "evidence": null,
-      "finding": "Pataisytame kainoraštyje išbraukta; į svetainės paslaugų pasiūlą nepridėti.",
-      "availability": "discontinued",
-      "previous_coverage": "missing"
+      "finding": "Pažymų, išrašų ir receptų išdavimas kaip klinikos paslauga neįvardytas. Raginimas atsinešti ankstesnius išrašus nėra išrašų išdavimo paslauga."
     }
   ],
   "laboratory_services": {
@@ -214,10 +186,12 @@
     {
       "page": "/ginekologo-konsultacija-vilniuje/",
       "add": [
-        "Konsultacijos dėl nevaisingumo ir klimakterinio laikotarpio susirgimų",
+        "Nevaisingumo ir klimakterinio laikotarpio konsultacijos",
         "Laboratorinių tyrimų kategorijos",
         "Kolposkopija",
-        "Gimdos kaklelio patologijos elektrochirurginis gydymas"
+        "Elektrochirurginis gimdos kaklelio patologijos gydymas",
+        "Probatorinė abrazija",
+        "Gydomosios vonelės"
       ]
     },
     {
@@ -230,28 +204,34 @@
     {
       "page": "/kontracepcijos-parinkimas/",
       "add": [
-        "Spiralės įvedimas (kaina be spiralės)",
+        "Spiralės įvedimas",
         "Spiralės pašalinimas"
       ]
     },
     {
       "page": "/nestumo-prieziura-vilniuje/",
       "add": [
+        "Nėštumo nustatymas testu",
         "Nėščiosios apžiūra",
-        "Priežiūra: matavimas ir vaisiaus širdies tonų klausymas",
+        "Matavimas ir vaisiaus širdies tonų klausymas",
         "Akušerinė transabdominalinė echoskopija"
-      ],
-      "clarify": [
-        "Nėštumo nustatymas testu nebeatliekamas. Esama bendroji ankstyvo nėštumo nustatymo formuluotė turi būti patikslinta pagal klinikos patvirtintą atliekamą būdą.",
-        "Nesiūlyti atskiros vaisiaus širdies tonų paslaugos; klausymas išlieka priežiūros eilutėje."
       ]
+    },
+    {
+      "page": "/paslaugos/",
+      "add": [
+        "Laktostazės likvidavimas",
+        "Lašelinės",
+        "Injekcijos",
+        "Pažymos, išrašai, receptai"
+      ],
+      "note": "Galima atskira papildomų procedūrų skiltis; nereikia naujo puslapio kiekvienai eilutei."
     }
   ],
   "limitations": [
     "Kainoraščio galiojimo data nežinoma.",
     "Konkrečių procedūrų metodika, indikacijos, vaistai, anestezija ir tyrimų paketai iš lapo nenustatomi.",
-    "Šiame audite viešos svetainės tekstai nepakeisti.",
-    "Apžiūrų ranka pakeistos kainos perskaitytos kaip 70 Eur, bet dar nepatvirtintos."
+    "Šiame audite viešos svetainės tekstai nepakeisti."
   ],
   "reviewed_files": {
     "index.html": "68f0616dd0a3406ca547415074da7d77b7078dfd9d6ac043e9b746ce5508febe",
@@ -263,6 +243,5 @@
     "nestumo-prieziura-vilniuje/index.html": "842997b2842a7ff367181e88d3aeddee71afbd5e54ded860b0b8933656d47e6f",
     "paslaugos/index.html": "e0aaced0b811c03cda6b3c86efbd83b306b08afb75ef287ad43cfbb0762f5916",
     "profilaktinis-ginekologinis-patikrinimas/index.html": "699d97c01ad024a222a7fa1faaa78bbd7d0762ddd4700a9fb2c8a73ce7cd34f7"
-  },
-  "source_revision": "Doctor-annotated price list received 2026-10-06; supersedes initial uncorrected list."
+  }
 }
