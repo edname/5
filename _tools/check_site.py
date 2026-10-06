@@ -55,6 +55,17 @@ for path, page in pages.items():
     check(page.meta.get('og:title') == page.title, f'{name}: title/OG mismatch')
     check(bool(page.meta.get('description')), f'{name}: missing description')
     check(page.meta.get('description') == page.meta.get('og:description'), f'{name}: description/OG mismatch')
+    check(page.meta.get('og:type') == 'website', f'{name}: incorrect OG type')
+    check(page.meta.get('og:locale') == 'lt_LT', f'{name}: incorrect OG locale')
+    check(bool(page.meta.get('og:site_name')), f'{name}: missing site name')
+    check(page.meta.get('og:image') == BASE + '/assets/klinika.jpg', f'{name}: incorrect social image URL')
+    check(page.meta.get('og:image:type') == 'image/jpeg', f'{name}: incorrect social image type')
+    check((page.meta.get('og:image:width'), page.meta.get('og:image:height')) == ('1200', '584'), f'{name}: incorrect social image dimensions')
+    check(bool(page.meta.get('og:image:alt')), f'{name}: missing social image alt text')
+    check(page.meta.get('twitter:card') == 'summary_large_image', f'{name}: missing large image card')
+    for field in ('title', 'description', 'image', 'image:alt'):
+        check(page.meta.get('twitter:' + field) == page.meta.get('og:' + field), f'{name}: Twitter/OG {field} mismatch')
+    page.assets.append(page.meta.get('og:image', ''))
     check(bool(page.schemas), f'{name}: missing JSON-LD')
     if route != '/':
         graph = page.schemas[0]['@graph']

@@ -241,7 +241,7 @@ def build():
             ) + '</ul></section>'
         faq_section = f'<section class="service-faq" aria-labelledby="klausimai"><h2 id="klausimai">Dažniausi klausimai</h2>{faq}</section>' if faq else ''
         output = f'''<!DOCTYPE html>
-<html lang="lt">
+<html lang="lt" prefix="og: https://ogp.me/ns#">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -250,10 +250,20 @@ def build():
         <link rel="canonical" href="{url}" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="lt_LT" />
+        <meta property="og:site_name" content="G. Karpenko privati ginekologijos klinika" />
         <meta property="og:title" content="{escape(page['title'], quote=True)}" />
         <meta property="og:description" content="{escape(page['description'], quote=True)}" />
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="584" />
+        <meta property="og:image:alt" content="Įėjimas į G. Karpenko kliniką Gedvydžių g. 25, Vilniuje" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="{escape(page['title'], quote=True)}" />
+        <meta name="twitter:description" content="{escape(page['description'], quote=True)}" />
+        <meta name="twitter:image" content="{BASE}/assets/klinika.jpg" />
+        <meta name="twitter:image:alt" content="Įėjimas į G. Karpenko kliniką Gedvydžių g. 25, Vilniuje" />
         <link rel="icon" type="image/png" sizes="120x120" href="/assets/favicon.png" />
         <link rel="stylesheet" href="/css/styles.css?v=services-25" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
