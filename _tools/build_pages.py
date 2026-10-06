@@ -254,7 +254,7 @@ def build():
         <meta property="og:description" content="{escape(page['description'], quote=True)}" />
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
-        <link rel="icon" href="/assets/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="120x120" href="/assets/favicon.png" />
         <link rel="stylesheet" href="/css/styles.css?v=services-25" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
 {analytics}
