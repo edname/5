@@ -575,3 +575,5 @@ main:has(.page-apie-klinika, .page-paslaugos, .page-kontaktai) > .breadcrumbs { 
     .page-ornament, .clinic-intro-ornament { display: none; }
     footer::before { content: ""; display: block; width: 24px; height: 24px; margin: 0 auto 10px; background: url("../assets/baltic-sun.svg") center / contain no-repeat; }
 }
+
+.additional-services { border-top: 3px double var(--line); margin-top: 28px; padding-top: 26px; }

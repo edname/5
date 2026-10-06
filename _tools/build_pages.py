@@ -19,7 +19,7 @@ PAGES = [
             <p>Privačioje klinikoje Jus priima gydytoja akušerė-ginekologė G. Karpenko. Per konsultaciją galite ramiai aptarti savo sveikatą, pasitikrinti ar pasikalbėti apie atsiradusius negalavimus. Privačia praktika gydytoja užsiima nuo 1997 metų, o pacientes priima Gedvydžių g. 25, Vilniuje.</p>
             <h2>Ką galima aptarti per konsultaciją?</h2>
             <p>Vizitas skirtas būtent Jūsų klausimams. Galite kreiptis dėl ginekologinių nusiskundimų, ankstesnių tyrimų rezultatų, profilaktinės apžiūros, kontracepcijos ar nėštumo priežiūros. Registruojantis verta trumpai pasakyti, dėl ko norėtumėte atvykti.</p>
-            <p>Klinikoje atliekama ginekologinių ligų diagnostika ir gydymas, įskaitant virusinius, bakterinius bei grybelinius susirgimus. Konsultacijos ir apžiūros metu aptariama, koks ištyrimas reikalingas Jūsų situacijoje.</p>
+            <p>Klinikoje konsultuojama dėl kontracepcijos, nevaisingumo ir klimakterinio laikotarpio susirgimų. Galite aptarti sunkumus pastoti, savijautos pokyčius artėjant menopauzei ar ankstesnių tyrimų rezultatus. Tolesnio ištyrimo ir gydymo poreikis aptariamas individualiai.</p>
             <h2>Pokalbis, apžiūra ir tolesni žingsniai</h2>
             <p>Pokalbio metu galite papasakoti apie savijautą, sveikatos istoriją ir tai, kas kelia nerimą. Gydytoja skiria laiko išklausyti bei atsakyti į klausimus. Apžiūros ir tyrimų poreikį gydytoja aptaria su Jumis, atsižvelgdama į sveikatos istoriją ir vizito priežastį.</p>
             <p>Jeigu reikalingas ultragarsinis tyrimas, daugiau apie jį rasite puslapyje <a href="/ginekologine-echoskopija-vilniuje/">ginekologinė echoskopija</a>. Jei norite pasitikrinti be konkretaus nusiskundimo, skaitykite apie <a href="/profilaktinis-ginekologinis-patikrinimas/">profilaktinę ginekologinę patikrą</a>.</p>
@@ -43,7 +43,8 @@ PAGES = [
         'lead': 'Ultragarsinis tyrimas ir jo rezultatų aptarimas su gydytoja akušere-ginekologe.',
         'content': '''
             <p>Echoskopinius tyrimus klinikoje atlieka gydytoja akušerė-ginekologė G. Karpenko. Tai ginekologinio ištyrimo dalis. Dėl ginekologinės echoskopijos Vilniuje galite registruotis telefonu, trumpai nurodydama, ar kreipiatės dėl konkretaus nusiskundimo, ar dėl ankstesnio tyrimo aptarimo.</p>
-            <h2>Kas yra ginekologinė echoskopija?</h2>
+            <h2>Transabdominalinė ir transvaginalinė echoskopija</h2>
+            <p>Klinikoje atliekama transabdominalinė echoskopija – per pilvo sieną – ir transvaginalinė echoskopija – naudojant makštinį daviklį. Tyrimo būdą gydytoja parenka pagal vizito tikslą ir individualią situaciją, aptarusi jį su Jumis.</p>
             <p>Echoskopija, dar vadinama ultragarsiniu tyrimu, leidžia vaizdu įvertinti vidaus organus. Tyrimui naudojamos garso bangos, o ne rentgeno spinduliai. Ginekologijoje ultragarsas padeda gydytojai įvertinti mažojo dubens organus ir papildyti konsultacijos bei apžiūros informaciją.</p>
             <p>Tyrimo rezultatai vertinami kartu su Jūsų savijauta ir sveikatos istorija. Vien echoskopijos gali nepakakti visiems klausimams atsakyti – tolesnį ištyrimą gydytoja aptaria pagal individualią situaciją.</p>
             <h2>Kaip pasiruošti tyrimui?</h2>
@@ -51,7 +52,7 @@ PAGES = [
             <p>Jeigu turite ankstesnių echoskopijų aprašus ar kitų tyrimų atsakymus, galite juos atsinešti. Taip pat verta užsirašyti klausimus, kuriuos norėtumėte aptarti. Apie nerimą ar diskomfortą pasakykite gydytojai – tyrimo eigą galima paaiškinti prieš jį pradedant.</p>
             <h2>Echoskopija ir konsultacija</h2>
             <p>Registruodamasi patikslinkite, ar norėtumėte <a href="/ginekologo-konsultacija-vilniuje/">ginekologo konsultacijos</a> su echoskopiniu tyrimu. Konkrečių tyrimų poreikis ir jų apimtis nustatomi individualiai, o informacija apie paslaugų kainą suteikiama telefonu.</p>
-            <p>Jeigu ieškote informacijos apie nėštumo nustatymą ar vaisiaus stebėjimą, apsilankykite <a href="/nestumo-prieziura-vilniuje/">nėštumo priežiūros</a> puslapyje. Jame aptariamos nėščiosioms skirtos klinikos paslaugos.</p>
+            <p>Jeigu ieškote informacijos apie nėščiųjų priežiūrą ar akušerinę echoskopiją, apsilankykite <a href="/nestumo-prieziura-vilniuje/">nėštumo priežiūros</a> puslapyje. Jame aptariamos nėščiosioms skirtos klinikos paslaugos.</p>
             <h2>Kur atliekamas tyrimas?</h2>
             <p>Klinika įsikūrusi Gedvydžių g. 25, Vilniuje. Vizito laiką, echoskopijos kainą ir pasiruošimą aptarkite telefonu <a href="tel:+37052302235">+370 5 230 2235</a>.</p>
         ''',
@@ -65,16 +66,16 @@ PAGES = [
         'slug': 'nestumo-prieziura-vilniuje',
         'label': 'Nėštumo priežiūra',
         'title': 'Nėštumo priežiūra Vilniuje | G. Karpenko klinika',
-        'description': 'Nėštumo nustatymas ir nėščiųjų priežiūra Vilniuje. Gydytojos G. Karpenko konsultacijos, vaisiaus stebėjimas ir tyrimų aptarimas. Gedvydžių g. 25.',
-        'heading': 'Nėštumo nustatymas ir priežiūra Vilniuje',
+        'description': 'Nėščiųjų priežiūra Vilniuje: ginekologinė apžiūra, vaisiaus širdies tonų klausymas priežiūros metu ir transabdominalinė echoskopija. G. Karpenko klinika.',
+        'heading': 'Nėščiųjų priežiūra Vilniuje',
         'lead': 'Gydytojos akušerės-ginekologės dėmesys Jums ir besivystančiam nėštumui.',
         'content': '''
-            <p>Nėštumo nustatymu ir nėščiųjų priežiūra klinikoje rūpinasi gydytoja G. Karpenko. Per tolesnius vizitus su ja galite aptarti savijautos pokyčius, tyrimų atsakymus ir naujai kilusius klausimus. Pacientės priimamos Vilniuje, Gedvydžių g. 25. Gydytoja privačia praktika užsiima nuo 1997 metų ir skiria laiko konsultacijai bei Jūsų klausimams.</p>
-            <h2>Nėštumo nustatymas</h2>
-            <p>Jeigu norite patvirtinti nėštumą ir aptarti tolesnę priežiūrą, registruodamasi nurodykite vizito priežastį. Klinikoje atliekamas ankstyvas nėštumo nustatymas, o reikalingas ištyrimas parenkamas pagal individualią situaciją.</p>
+            <p>Nėščiųjų priežiūra klinikoje rūpinasi gydytoja G. Karpenko. Per tolesnius vizitus su ja galite aptarti savijautos pokyčius, tyrimų atsakymus ir naujai kilusius klausimus. Pacientės priimamos Vilniuje, Gedvydžių g. 25. Gydytoja privačia praktika užsiima nuo 1997 metų ir skiria laiko konsultacijai bei Jūsų klausimams.</p>
+            <h2>Nėščiosios apžiūra ir pirmasis vizitas</h2>
+            <p>Klinikoje atliekama nėščiosios ginekologinė apžiūra. Registruodamasi nurodykite vizito priežastį ir, jei žinote, nėštumo savaitę. Gydytoja aptars Jūsų savijautą ir reikalingą priežiūrą.</p>
             <p>Pirmojo pokalbio metu naudinga aptarti turimus tyrimų rezultatus, ankstesnių nėštumų informaciją, vartojamus vaistus bei kitus sveikatos klausimus. Jei turite ankstesnių išrašų, galite juos atsinešti. Registruojantis pasiteiraukite, kokia informacija būtų naudinga Jūsų vizitui.</p>
             <h2>Nėščiųjų priežiūra ir vaisiaus stebėjimas</h2>
-            <p>Klinikos paslaugos apima nėščiųjų priežiūrą, vaisiaus stebėjimą ir tyrimus nėštumo metu. Vizitai suteikia galimybę aptarti savijautą, tyrimų atsakymus bei tolesnius priežiūros žingsnius.</p>
+            <p>Nėščiosios priežiūros metu atliekami matavimai ir klausomi vaisiaus širdies tonai. Klinikoje taip pat atliekama transabdominalinė akušerinė echoskopija – ultragarsinis tyrimas per pilvo sieną. Kokių paslaugų reikės konkretaus apsilankymo metu, aptarkite su gydytoja.</p>
             <p>Apsilankymų ir ištyrimo planas priklauso nuo nėštumo eigos bei sveikatos aplinkybių. Konkrečius tyrimus ir jų laiką aptarkite su gydytoja.</p>
             <h2>Klausimai, kuriuos verta aptarti</h2>
             <ul>
@@ -88,7 +89,7 @@ PAGES = [
             <p>Dėl priėmimo laiko, priežiūros apimties ir kainų skambinkite <a href="tel:+37052302235">+370 5 230 2235</a>. Jei dalį tyrimų jau atlikote kitoje įstaigoje, paminėkite tai registruodamasi, kad būtų galima aptarti Jūsų vizito poreikį.</p>
         ''',
         'faq': [
-            ('Ar galima kreiptis dėl nėštumo nustatymo?', 'Taip. Ankstyvas nėštumo nustatymas yra viena iš klinikos paslaugų. Dėl tinkamo vizito laiko ir pasiruošimo susisiekite telefonu.'),
+            ('Kokios nėščiųjų priežiūros paslaugos teikiamos?', 'Klinikoje atliekama nėščiosios ginekologinė apžiūra, priežiūra su matavimais ir vaisiaus širdies tonų klausymu bei transabdominalinė echoskopija. Vizito apimtį ir laiką suderinkite registruodamasi.'),
             ('Ar nėštumo priežiūra apima visus tyrimus už vieną kainą?', 'Apie paslaugų apimtį ir konkrečių konsultacijų bei tyrimų kainas teiraukitės registruodamasi. Registruojantis patikslinkite, kas įskaičiuota į Jums reikalingos paslaugos kainą.'),
         ],
         'sources': [('NHS: apie nėštumo priežiūrą ir apsilankymus (anglų kalba)', 'https://www.nhs.uk/pregnancy/your-pregnancy-care/your-antenatal-care-and-appointments/')],
@@ -105,8 +106,8 @@ PAGES = [
             <h2>Pasirinkimas prasideda nuo pokalbio</h2>
             <p>Kontracepcijos būdai skiriasi naudojimu ir tinkamumu konkrečiam žmogui. Konsultacijos metu svarbu aptarti, ko tikitės iš pasirinkto metodo, kokias priemones jau naudojote ir kaip jautėtės jas vartodama. Draugei tinkantis pasirinkimas nebūtinai atitiks Jūsų poreikius.</p>
             <p>Pasaulio sveikatos organizacija nurodo, kad metodo pasirinkimas priklauso nuo asmens sveikatos, pageidavimų ir poreikių. Sveikatos priežiūros specialisto konsultacija padeda įvertinti tinkamas galimybes.</p>
-            <h2>Hormoniniai ir nehormoniniai būdai</h2>
-            <p>Klinikoje aptariami abu kontracepcijos tipai. Galite klausti apie naudojimo ypatumus, metodo tinkamumą ir tai, ką daryti, jei anksčiau pasirinkta priemonė Jums netiko. Sprendimas priimamas individualiai, įvertinus Jūsų sveikatos aplinkybes.</p>
+            <h2>Kontracepcinės spiralės įvedimas ir pašalinimas</h2>
+            <p>Klinikoje atliekamas kontracepcinės spiralės įvedimas ir pašalinimas. Konsultacijos metu aptariama, ar šis kontracepcijos būdas Jums tinka. Registruodamasi pasakykite, kokios procedūros reikia, ir pasiteiraukite dėl pasiruošimo bei spiralės įsigijimo. Spiralės kaina į įvedimo paslaugos kainą neįskaičiuota.</p>
             <p>Kontracepcijos pasirinkimas ir apsauga nuo lytiškai plintančių infekcijų nėra tas pats klausimas. Prezervatyvai gali padėti apsisaugoti ir nuo nėštumo, ir nuo šių infekcijų; kitų kontracepcijos metodų paskirtį bei ribas aptarkite per konsultaciją.</p>
             <h2>Kaip pasiruošti konsultacijai?</h2>
             <p>Pagalvokite, kokių priemonių esate bandžiusi, ar turėjote nepageidaujamų reakcijų ir kokie klausimai Jums svarbiausi. Turėkite informaciją apie vartojamus vaistus ir sveikatos istoriją. Jei domitės konkrečia priemone ar procedūra, jos prieinamumą pasitikrinkite registruodamasi.</p>
@@ -254,7 +255,7 @@ def build():
         <meta property="og:url" content="{url}" />
         <meta property="og:image" content="{BASE}/assets/klinika.jpg" />
         <link rel="icon" href="/assets/favicon.ico" />
-        <link rel="stylesheet" href="/css/styles.css?v=ornaments-24" />
+        <link rel="stylesheet" href="/css/styles.css?v=services-25" />
         <script type="application/ld+json">{json.dumps(schema, ensure_ascii=False, indent=2)}</script>
 {analytics}
     </head>

@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-06",
+  "purpose": "Short original additions to existing service pages; no new pages or public price list.",
+  "availability_source": "_tools/clinic-price-list.json, corrected doctor-supplied list and user confirmations",
+  "references": [
+    {
+      "url": "https://www.hila.lt/paslaugos-ir-kainos/akuserija-ginekologija/spirales-idejimas/",
+      "used_for": "Service naming and consultation-before-procedure structure; no Hila timing, anaesthesia or follow-up promises copied."
+    },
+    {
+      "url": "https://www.hila.lt/paslaugos-ir-kainos/tyrimai/akuserijos-ir-ginekologiniai-tyrimai/",
+      "used_for": "Short explanation of colposcopy; no additional biopsy service inferred."
+    },
+    {
+      "url": "https://nmc.lt/medicinos-paslaugos/ginekologija/ginekologine-echoskopija/",
+      "used_for": "Two ultrasound method names."
+    },
+    {
+      "url": "https://www.klinikauneja.lt/paslaugos/ginekologija/",
+      "used_for": "Plain-language consultation topics: fertility and menopausal symptoms."
+    }
+  ],
+  "editorial_rules": [
+    "Original wording; competitor availability never establishes Karpenko availability.",
+    "No invented procedure duration, anaesthesia, success rate, visit package or laboratory test panel.",
+    "Pregnancy page now describes confirmed care and ultrasound; unsupported general early-pregnancy diagnosis promise removed, URL preserved.",
+    "Numeric prices remain internal."
+  ],
+  "updated_pages": [
+    "paslaugos",
+    "ginekologo-konsultacija-vilniuje",
+    "ginekologine-echoskopija-vilniuje",
+    "kontracepcijos-parinkimas",
+    "nestumo-prieziura-vilniuje",
+    "apie-klinika"
+  ]
+}

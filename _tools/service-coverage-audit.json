@@ -264,5 +264,6 @@
     "paslaugos/index.html": "e0aaced0b811c03cda6b3c86efbd83b306b08afb75ef287ad43cfbb0762f5916",
     "profilaktinis-ginekologinis-patikrinimas/index.html": "699d97c01ad024a222a7fa1faaa78bbd7d0762ddd4700a9fb2c8a73ce7cd34f7"
   },
-  "source_revision": "Doctor-annotated price list received 2026-10-06; supersedes initial uncorrected list."
+  "source_revision": "Doctor-annotated price list received 2026-10-06; supersedes initial uncorrected list.",
+  "historical_status": "Snapshot before service copy update; see service-copy-research-2026-10-06.json for implemented changes."
 }
